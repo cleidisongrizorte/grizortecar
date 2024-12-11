@@ -21,7 +21,7 @@ class Cliente {
     // Metodos get
 
     public function getId(){
-        return $this->id
+        return $this->id;
     }
     public function getNome(){
         return $this->nome;

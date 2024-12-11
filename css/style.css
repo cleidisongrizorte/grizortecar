@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root{
+    --logo-color:#F29A2E;
+    --green:#F25C05;
+    --yellow2:#732C02;
+    --yellow3:#401902;
+    --azul:#192a56;
+    --light-color:#666;
+    --branco:#fff;  
+    --box-shadow:0 0.5rem 1.5rem rgba(0,0,0,.1);
+    --fundo:#eee;
+    --preto:#0D0D0D;
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    
+}
+
+/*--------------------------------------------------------------
+>>> INICIO DO HEADER:
+--------------------------------------------------------------*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+section{
+    padding: 2rem 3%;
+}
+section:nth-child(even){
+    background: var(--fundo);
+}
+
+header .logo{
+    color: var(--azul);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+.navbar a:hover{
+    color: var(--branco);
+    background-color: var(--green);
+}
+.navbar a.active{
+    color: var(--branco);
+    background-color: var(--green);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--azul);
+    border-radius: 50%;
+    background: var(--fundo);
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--branco);
+    background: var(--green);
+    transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;    
+}
+
+/*--------------------------------------------------------------
+>>> FIM DO HEADER <<<
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> INICIO DO FOOTER:
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> FIM DO FOOTER <<<
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> INICIO DO INDEX:
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> FIM DO INDEX <<<
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> INICIO DO LOGIN:
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> FIM DO LOGIN <<<
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> INICIO DO CADASTRO:
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> FIM DO CADASTRO <<<
+--------------------------------------------------------------*/
