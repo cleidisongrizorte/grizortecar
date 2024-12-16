@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root{
+    --logo-color:#F29A2E;
+    --laranja:#F25C05;    
+    --laranja2:#732C02;
+    --laranja3:#401902;
+    --azul:#192a56;
+    --light-color:#666;
+    --branco:#fff;  
+    --box-shadow:0 0.5rem 1.5rem rgba(0,0,0,.1);
+    --fundo:#eee;
+    --preto:#0D0D0D;
+
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+footer{
+    background-color: var(--azul);
+    color: var(--branco);
+}
+footer .line-footer1{
+    text-align: center;  
+    border-bottom: 1px solid var(--branco); 
+    padding-bottom: 40px; 
+}
+.line-footer1 h2{
+    font-size: 2.5rem;
+}
+.line-footer1 p{
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+}
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    padding: 10px;
+    outline: 0;
+}
+.line-footer1 form input[type=submit]{
+    width: 80px;
+    height: 40px;
+    background-color: var(--laranja);
+    border: 0;
+    color: var(--branco);
+    cursor: pointer;
+    transition: .2s;
+}
+.line-footer1 form input[type=submit]:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
+
+footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+     border-bottom: 1px solid var(--branco);
+}
+footer .line-footer2 .box-line-footer{
+    max-width:(100% / 5);
+}
+
+footer .box-line-footer img{
+    max-width: 200px; 
+    margin-bottom: 10px; 
+}
+.line-footer2 .box-line-footer h3 {
+    color: var(--laranja);
+    margin-bottom: 20px;
+}
+.line-footer2 .box-line-footer a{
+    color: var(--branco);
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: .8rem;
+}
+.box-line-footer .btn-redes a{
+    display: inline;
+}
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+.box-line-footer .btn-redes button:hover{
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+}
+footer .line-footer3{
+    padding-top: 40px;
+    text-align: center;
+}
