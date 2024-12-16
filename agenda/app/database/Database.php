@@ -1,38 +1,18 @@
-<?php
-
-include_once __DIR__. '../../config/config.php';
-
-class Database {
-    private $servename;
-    private $user;
-    private $password;
-    private $dbname;
-    private $connection;
-
-    // Método construtor
-
-    public function __construct()
-    {
-        $this->servename = DB_HOST;
-        $this->user = DB_USER;
-        $this->password = DB_PASSWORD;
-        $this->dbname = DB_NAME;
-    }
-
-    // Método para criar uma conexão com o banco de dados
-    public function connect(){
-        $this->connection = new mysqli($this->servername,$this->user,$this->password,$this->dbname);
-        return $this->connection$connection;
-    }
-    // Método para fechar a conexão com o banco de dados
-    public function closeConnection()
-    {
-        if ($this->connection){
-            $this->connection->close();
-        }
-
-    }
-
-}
-
-?>
+ame="AdmArea"
+                     gfsSchemaLocation="jpfgdgml_AdmArea.gfs" />
+        <featureType elementName="AdmBdry"
+                     gfsSchemaLocation="jpfgdgml_AdmBdry.gfs" />
+        <featureType elementName="CommBdry"
+                     gfsSchemaLocation="jpfgdgml_CommBdry.gfs" />
+        <featureType elementName="AdmPt"
+                     gfsSchemaLocation="jpfgdgml_AdmPt.gfs" />
+        <featureType elementName="CommPt"
+                     gfsSchemaLocation="jpfgdgml_CommPt.gfs" />
+        <featureType elementName="SBArea"
+                     gfsSchemaLocation="jpfgdgml_SBArea.gfs" />
+        <featureType elementName="SBBdry"
+                     gfsSchemaLocation="jpfgdgml_SBBdry.gfs" />
+        <featureType elementName="SBAPt"
+                     gfsSchemaLocation="jpfgdgml_SBAPt.gfs" />
+        <featureType elementName="WA"
+                 

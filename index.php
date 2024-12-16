@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php include 'banner.php';?>
 
 </body>
 </html>

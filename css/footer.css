@@ -20,6 +20,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    
+}
 .interface{
     max-width: 1280px;
     margin: 0 auto;
@@ -79,19 +86,20 @@ footer .line-footer2 .box-line-footer{
 }
 
 footer .box-line-footer img{
-    max-width: 200px; 
-    margin-bottom: 10px; 
+    max-width: 300px; 
+    margin-bottom: 0px; 
 }
 .line-footer2 .box-line-footer h3 {
     color: var(--laranja);
     margin-bottom: 20px;
+    font-size: 2.6rem;
 }
 .line-footer2 .box-line-footer a{
     color: var(--branco);
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 2.2rem;
 }
 .box-line-footer .btn-redes a{
     display: inline;
