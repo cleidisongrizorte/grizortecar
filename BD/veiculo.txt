@@ -1,0 +1,13 @@
+create table veiculo
+(id_veiculo int auto_increment,
+id_clientes int,
+chassi varchar(50),
+placa varchar(50) NOT NULL,
+marca varchar(50) NOT NULL,
+modelo varchar(100) NOT NULL,
+cor varchar(30) NOT NULL,
+ano_fabricao varchar(10) NOT NULL,
+descricao varchar(255),
+primary key (id_veiculo),
+foreign key (id_clientes) references clientes (id_clientes)
+);

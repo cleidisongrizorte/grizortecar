@@ -1,0 +1,7 @@
+create table notificacao(
+id_notificacao int auto_increment,
+texto varchar(255),
+forma_envio varchar(255),
+ativo varchar(50),
+primary key(id_notificacao)
+);

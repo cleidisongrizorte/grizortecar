@@ -1,0 +1,9 @@
+Live Preview
+Prettier - Code formatter
+Better Comments
+
+PHP Intelephense
+Error Lens
+Dracula Theme Official
+Material Icon Theme
+Portuguese (Brazil) Language Pack for Visual Studio Co
