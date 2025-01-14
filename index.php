@@ -16,7 +16,7 @@
     />
 
     <!-- 
-    - favicon teste2
+    - favicon
   -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
 
@@ -57,6 +57,7 @@
 
     <main>
       <article>
+        
         <!-- 
         - #HERO
       -->
