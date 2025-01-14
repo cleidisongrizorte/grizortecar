@@ -16,7 +16,7 @@
     />
 
     <!-- 
-    - favicon
+    - favicon teste
   -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
 
