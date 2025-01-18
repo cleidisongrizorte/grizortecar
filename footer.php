@@ -159,7 +159,7 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
-            Copyright 2025, GrizorteCar Todos os Direitos Reservado.
+            Copyright GrizorteCar @ Todos os Direitos Reservado.
           </p>
 
           <img

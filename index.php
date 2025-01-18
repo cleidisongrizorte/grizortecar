@@ -62,7 +62,7 @@
         - #HERO
       -->
 
-        <section
+       <section
           class="hero has-bg-image"
           aria-label="home"
           style="background-image: url('./assets/images/hero-bg.jpg')"
