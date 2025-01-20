@@ -55,20 +55,22 @@
 <body>
     <div class="telalogin2">
         <div class="telalogin" id="telalogin">
+
           <!-- aqui e tela de cadastro -->
         <div class="form-container sign-up">
-            <form action='login.php' method='post'>
+            <form action="dados.php" method='post'>
                 <h1 class="h2 section-title">Crie sua conta</h1>
                 <span>Prenche os dados abaixo</span>
-                <input type="text" placeholder="Nome" name="nome">
+                <input type="nome" placeholder="Nome" name="nome">
                 <input type="email" placeholder="Email" name="email">
                 <input type="senha" placeholder="Senha" name="senha">
                 <button>Criar Conta</button>
             </form>
         </div>
         <!-- fim tela de cadastro -->
+
         <div class="form-container sign-in">
-            <form action="login.php" method='post'>
+            <form action="dados.php" method='post'>
                 <h1 class="h2 section-title">Entrar</h1>
                 <span>Entra com seu email e senha</span>
                 <input type="email" placeholder="Email">
@@ -77,6 +79,7 @@
                 <button>Entrar</button>
             </form>
         </div>
+        
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
@@ -101,22 +104,4 @@
     <script src="./assets/js/script.js"></script>
 </html>
 
-  <!-- comando para o cadastro salvar no banco de dados -->
-<?php
-
-include_once __DIR__ . '/app/cliente/Cliente.php';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST')
-{
-
-    $cliente = new Cliente(null,$_POST['nome'],$_POST["telefone"],$_POST["email"],$_POST["senha"],);
-
-    if ($cliente->cadastrar())
-    {
-        echo "Cliente cadastrado com sucesso!";
-    }
-    else {
-        echo "Erro ao cadastrar o cliente!";
-    }
-  }
-?>
+ 
