@@ -52,7 +52,7 @@
 <body>
   <header class="header" id="header">
       <div class="container">
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
           <img
             src="./assets/images/logo.png"
             width="128"
@@ -64,7 +64,7 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li>
-              <a href="#" class="navbar-link">Home</a>
+              <a href="index.php" class="navbar-link">Home</a>
             </li>
 
             <li>
@@ -85,7 +85,7 @@
           </ul>
         </nav>
 
-        <a href="#" class="btn btn-primary">
+        <a href="login.php" class="btn btn-primary">
           <span class="span">Login/Criar Conta</span>
 
           <span class="material-symbols-rounded">arrow_forward</span>

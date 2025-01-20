@@ -59,9 +59,9 @@
             <form>
                 <h1 class="h2 section-title">Crie sua conta</h1>
                 <span>Prenche os dados abaixo</span>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Senha">
                 <button>Criar Conta</button>
             </form>
         </div>
@@ -70,7 +70,7 @@
                 <h1 class="h2 section-title">Entrar</h1>
                 <span>Entra com seu email e senha</span>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Senha">
                 <a href="#">Esqueceu a sua senha?</a>
                 <button>Entrar</button>
             </form>
