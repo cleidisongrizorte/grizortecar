@@ -50,7 +50,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
   </head>
 <body>
-        <footer class="footer">
+  <footer class="footer">
       <div class="footer-top section">
         <div class="container">
           <div class="footer-brand">
@@ -181,7 +181,7 @@
           />
         </div>
       </div>
-    </footer>
+  </footer>
 
 
 </body>

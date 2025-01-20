@@ -50,7 +50,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
   </head>
 <body>
-        <header class="header" id="header">
+  <header class="header" id="header">
       <div class="container">
         <a href="#" class="logo">
           <img
@@ -101,7 +101,7 @@
           <span class="nav-toggle-icon icon-3"></span>
         </button>
       </div>
-    </header>
+  </header>
 
     <!-- Banner da header -->
     

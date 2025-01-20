@@ -20,14 +20,14 @@ window.addEventListener("scroll", function () {
 
 // // tela de login
 
-// const container = document.getElementById("telalogin");
-// const registerBtn = document.getElementById("register");
-// const loginBtn = document.getElementById("login");
+const container = document.getElementById("telalogin");
+const registerBtn = document.getElementById("register");
+const loginBtn = document.getElementById("login");
 
-// registerBtn.addEventListener("click", () => {
-//   container.classList.add("active");
-// });
+registerBtn.addEventListener("click", () => {
+  container.classList.add("active");
+});
 
-// loginBtn.addEventListener("click", () => {
-//   container.classList.remove("active");
-// });
+loginBtn.addEventListener("click", () => {
+  container.classList.remove("active");
+});
