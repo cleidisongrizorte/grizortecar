@@ -59,11 +59,11 @@
         <div class="form-container sign-up">
             <form action='login.php' method='post'>
                 <h1 class="h2 section-title">Crie sua conta</h1>
-                <span>Prenche os dados abaixo</span>
-                <input type="text" placeholder="Nome" name="nome">
+                <span>Preencha os dados abaixo</span>
+                <input type="text" placeholder="Nome" name="nome" required>
                 <!-- <input type="text" placeholder="Telefone" name="telefone"> -->
-                <input type="email" placeholder="Email" name="email">
-                <input type="password" placeholder="Senha" name="senha">
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Senha" name="senha" required>
                 <button>Criar Conta</button>
                  <!-- <input class="btn" type="submit" value="Enviar"> -->
             </form>
