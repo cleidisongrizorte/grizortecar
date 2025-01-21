@@ -76,7 +76,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Sobre Nós</a>
+              <a href="#sobre" class="navbar-link">Sobre Nós</a>
             </li>
 
             <li>

@@ -255,7 +255,7 @@
         <!-- #Sobre Nos -->
       
 
-        <section class="section about has-before" aria-labelledby="about-label">
+        <section class="section about has-before" aria-labelledby="about-label" id="sobre">
           <div class="container">
             <figure class="about-banner">
               <img

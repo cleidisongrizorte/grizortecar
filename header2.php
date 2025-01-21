@@ -76,7 +76,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Sobre Nós</a>
+              <a href="index.php#sobre" class="navbar-link">Sobre Nós</a>
             </li>
 
             <li>
