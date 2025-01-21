@@ -61,9 +61,11 @@
                 <h1 class="h2 section-title">Crie sua conta</h1>
                 <span>Prenche os dados abaixo</span>
                 <input type="text" placeholder="Nome" name="nome">
+                <!-- <input type="text" placeholder="Telefone" name="telefone"> -->
                 <input type="email" placeholder="Email" name="email">
-                <input type="senha" placeholder="Senha" name="senha">
+                <input type="password" placeholder="Senha" name="senha">
                 <button>Criar Conta</button>
+                 <!-- <input class="btn" type="submit" value="Enviar"> -->
             </form>
         </div>
         <!-- fim tela de cadastro -->
@@ -72,7 +74,7 @@
                 <h1 class="h2 section-title">Entrar</h1>
                 <span>Entra com seu email e senha</span>
                 <input type="email" placeholder="Email">
-                <input type="senha" placeholder="Senha">
+                <input type="password" placeholder="Senha">
                 <a href="#">Esqueceu a sua senha?</a>
                 <button>Entrar</button>
             </form>
@@ -104,7 +106,7 @@
   <!-- comando para o cadastro salvar no banco de dados -->
 <?php
 
-include_once __DIR__ . '/app/cliente/Cliente.php';
+include_once __DIR__ . '/agenda/app/cliente/Cliente.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {

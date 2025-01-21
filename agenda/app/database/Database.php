@@ -1,22 +1,46 @@
-           <AllowRemoteDownload>true</AllowRemoteDownload>
-            <ResolutionMode>RawContent</ResolutionMode>
-            <ResolutionDepth>1</ResolutionDepth>
-            <CacheResults>false</CacheResults>
-        </DefaultResolution>
-<!--
-        <URLSpecificResolution>
-            <URLPrefix>http://inspire.ec.europa.eu/codelist</URLPrefix>
-            <HTTPHeader>
-                <Name>Accept</Name>
-                <Value>application/x-iso19135+xml</Value>
-            </HTTPHeader>
-            <HTTPHeader>
-                <Name>Accept-Language</Name>
-                <Value>en</Value>
-            </HTTPHeader>
-            <AllowRemoteDownload>true</AllowRemoteDownload>
-            <ResolutionMode>FieldsFromXPath</ResolutionMode>
-            <ResolutionDepth>1</ResolutionDepth>
-            <CacheResults>true</CacheResults>
-            <Field>
-                <Name>name</Nam
+<?php
+
+include_once __DIR__ . '../../../config/config.php';
+
+class Database
+{
+
+    private $servername;
+    private $user;
+    private $password;
+    private $dbname;
+    private $connection;
+
+    // Método construtor
+
+    public function __construct()
+    {
+        $this->servername = DB_HOST;
+        $this->user = DB_USER;
+        $this->password = DB_PASSWORD;
+        $this->dbname = DB_NAME;  
+    }
+
+
+    // Método para criar uma conexão com o banco de dados
+    public function connect()
+    {
+        $this->connection = new mysqli($this->servername,$this->user,$this->password,$this->dbname);
+
+        return $this->connection;
+    }
+
+    // Método para fechar uma conexão do banco de dados
+    public function closeConnection()
+    {
+        if ($this->connection){
+            $this->connection->close();
+        }
+
+    }
+
+
+
+}
+
+?>

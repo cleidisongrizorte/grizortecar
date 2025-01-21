@@ -1,6 +1,7 @@
 <?php
 
-include_once __DIR__ . '../database/Database.php';
+// Certifique-se de que o caminho para o arquivo de banco de dados está correto
+include_once __DIR__ . '../../database/Database.php';
 
 class Cliente {
 
@@ -11,88 +12,106 @@ class Cliente {
     private $email;
     private $senha;
 
-    //Metodo construtor
-    public function __construct($id; $nome; $telefone; $email; $senha){
-        $this ->id = $id;
-        $this ->nome = $nome;
-        $this ->telefone = $telefone;
-        $this ->email = $email;
-        $this ->senha = $senha;
-
+    // Método construtor
+    public function __construct($id, $nome, $telefone, $email, $senha) {
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->telefone = $telefone;
+        $this->email = $email;
+        $this->senha = $senha;
     }
 
-    // Metodos get
-
-    public function getId(){
+    // Métodos get
+    public function getId() {
         return $this->id;
     }
-    public function getNome(){
+
+    public function getNome() {
         return $this->nome;
     }
-    public function getTelefone(){
+
+    public function getTelefone() {
         return $this->telefone;
     }
-    public function getEmail(){
+
+    public function getEmail() {
         return $this->email;
     }
 
-    //Metodos Set
-
-    public function setId($id){
+    // Métodos set
+    public function setId($id) {
         $this->id = $id;
     }
-    public function setNome($nome){
+
+    public function setNome($nome) {
         $this->nome = $nome;
     }
-    public function setTelefone($telefone){
+
+    public function setTelefone($telefone) {
         $this->telefone = $telefone;
     }
-    public function setEmail($email){
+
+    public function setEmail($email) {
         $this->email = $email;
     }
-    public function setSenha($senha){
+
+    public function setSenha($senha) {
         $this->senha = $senha;
     }
-    public function setId($id){
-        $this->id = $id;
-    }
-    
 
-
-    //Metodos
-    public function cadastrar(){
-        //conectar com o banco de dados
+    // Método para cadastrar cliente
+    public function cadastrar() {
+        // Conectar com o banco de dados
         $db = new Database();
         $conn = $db->connect();
 
-        //Salvar no banco de dados
+        // Preparar e executar a query de inserção
+        $stmt = $conn->prepare("INSERT INTO cliente(nome, telefone, email, senha) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $this->nome, $this->telefone, $this->email, $this->senha);
 
-        $stmt = $conn->("INSERT INTO cliente(nome,telefone,email,senha) VALUES (?,?,?,?)");
-        $stmt->bind_param("ssss",$this->nome,$this->telefone,$this->email,$this->senha);
-        
-        if ($stmt->execute()){
+        // Executar e verificar o sucesso
+        if ($stmt->execute()) {
             $stmt->close();
             $db->closeConnection();
             return true;
-        }
-        else{
+        } else {
             $stmt->close();
             $db->closeConnection();
             return false;
         }
-
-    }
-    public function atualizar(){
-
-    }
-    public function apagar(){
-
-    }
-    public function realizar(){
-
     }
 
+    // Método para atualizar cliente (ainda não implementado)
+    public function atualizar() {
+         // Conectar com o banco de dados
+        $db = new Database();
+        $conn = $db->connect();
 
+        // Preparar para atualizar
+        $stmt = $conn->prepare("UPDATE cliente SET(nome, telefone, email, senha) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $this->nome, $this->telefone, $this->email, $this->senha);
+
+        // Executar e verificar o sucesso
+        if ($stmt->execute()) {
+            $stmt->close();
+            $db->closeConnection();
+            return true;
+        } else {
+            $stmt->close();
+            $db->closeConnection();
+            return false;
+        }
+    }
+
+    // Método para apagar cliente (ainda não implementado)
+    public function apagar() {
+        // Adicione a lógica de exclusão aqui
+    }
+
+    // Método para realizar alguma ação (ainda não implementado)
+    public function realizar() {
+        // Adicione a lógica para realizar alguma ação aqui
+    }
 }
 
 ?>
