@@ -88,11 +88,11 @@
               </a>
             </div>
 
-            <figure class="hero-banner" style="--width: 1228; --height: 789">
+            <figure class="hero-banner" style="--width: 1228; --height: 689">
               <img
                 src="./assets/images/hero-banner.png"
                 width="1228"
-                height="789"
+                height="689"
                 alt="red motor vehicle"
                 class="move-anim"
               />
