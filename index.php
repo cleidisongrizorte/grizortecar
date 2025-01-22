@@ -335,7 +335,7 @@
                     style="--width: 350; --height: 406"
                   >
                     <img
-                      src="./assets/images/work-1.jpg"
+                      src="./assets/images/dica01.webp"
                       width="350"
                       height="406"
                       loading="lazy"
@@ -345,9 +345,9 @@
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-subtitle">Dica 01</p>
+                    <p class="card-subtitle">Dica</p>
 
-                    <h3 class="h3 card-title">Dica 01</h3>
+                    <h3 class="h3 card-title">Palhetas dos limpadores</h3>
 
                     <a href="#" class="card-btn">
                       <span class="material-symbols-rounded"
@@ -375,9 +375,9 @@
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-subtitle">Dica 01</p>
+                    <p class="card-subtitle">Importante</p>
 
-                    <h3 class="h3 card-title">Dica 01</h3>
+                    <h3 class="h3 card-title">Suspensão e Freio</h3>
 
                     <a href="#" class="card-btn">
                       <span class="material-symbols-rounded"
@@ -405,9 +405,9 @@
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-subtitle">Dica 01</p>
+                    <p class="card-subtitle">Dica</p>
 
-                    <h3 class="h3 card-title">Dica 01</h3>
+                    <h3 class="h3 card-title">Regulagem Eletrônica</h3>
 
                     <a href="#" class="card-btn">
                       <span class="material-symbols-rounded"
