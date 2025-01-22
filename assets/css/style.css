@@ -1462,6 +1462,7 @@ header.rolagem {
 
   .footer .shape-1 {
     left: -100px;
+    
   }
 
   .footer .shape-2 {
@@ -1548,5 +1549,8 @@ header.rolagem {
 
   .footer-top .container {
     padding-inline-start: 20%;
+  }
+    .footer .shape-1 {    
+    padding-right: 100px;
   }
 }

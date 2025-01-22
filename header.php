@@ -86,7 +86,7 @@
         </nav>
 
         <a href="login.php" class="btn btn-primary">
-          <span class="span">Login/Criar Conta</span>
+          <span class="span">Entrar Conta</span>
 
           <span class="material-symbols-rounded">arrow_forward</span>
         </a>
