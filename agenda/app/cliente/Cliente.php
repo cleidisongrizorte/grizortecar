@@ -105,12 +105,12 @@ class Cliente {
 
     // Método para apagar cliente (ainda não implementado)
     public function apagar() {
-        // Adicione a lógica de exclusão aqui
+        
     }
 
     // Método para realizar alguma ação (ainda não implementado)
     public function realizar() {
-        // Adicione a lógica para realizar alguma ação aqui
+        
     }
 }
 
