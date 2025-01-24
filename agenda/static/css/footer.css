@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2025 Grizortecar
  */
 
 /*-----------------------------------*\
@@ -374,10 +374,6 @@ header.rolagem {
   padding-bottom: 50px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #contato footer
 \*-----------------------------------*/
@@ -624,10 +620,7 @@ header.rolagem {
     margin-block-start: -190px;
     padding-block: 50px;
   }
-  * HEADER
-   */
-
-  .nav-toggle-btn {
+  * HEADER */ .nav-toggle-btn {
     display: none;
   }
 
@@ -674,7 +667,9 @@ header.rolagem {
     padding: 12px 24px;
     font-size: var(--fs-5);
   }
-
+  .copyright {
+    text-align: left;
+  }
 }
 
 /* responsivel para largura tela 1200px */
@@ -744,9 +739,9 @@ header.rolagem {
     color: var(--rich-black-fogra-29);
   }
 
- /* novo header */
+  /* novo header */
 
-   .header {
+  .header {
     padding-block: 25px;
   }
 
@@ -758,13 +753,10 @@ header.rolagem {
     font-size: unset;
     padding-block: 15px;
   }
-
 }
 
 /* responsivel para largura tela 1600px */
 @media (min-width: 1600px) {
-
-
   .header .btn {
     padding: 18px 36px;
   }

@@ -65,7 +65,7 @@
                   <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
                 </div>
                 <div>
-                  <h3 class="h6">Hot Line</h3>
+                  <h3 class="h6">Telefone</h3>
                   <a href="tel:+62999999" class="card-subtitle">62 9999-9999</a>
                 </div>
               </div>
@@ -77,7 +77,7 @@
                   <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                 </div>
                 <div>
-                  <h3 class="h6">E-mail Address</h3>
+                  <h3 class="h6">E-mail</h3>
                   <a href="mailto:contato@grizortecar.com.br" class="card-subtitle">contato@grizortecar.com.br</a>
                 </div>
               </div>
@@ -112,7 +112,7 @@
             <ion-icon name="mail-unread-outline" aria-hidden="true"></ion-icon>
           </div>
 
-          <h3 class="h3 card-title">Inscreva-se para receber novidades e insights sobre carros elétricos</h3>
+          <h3 class="h3 card-title">Inscreva-se para receber novidades</h3>
 
           <form action="#" class="newsletter-form">
 
@@ -131,11 +131,11 @@
           <p class="h6 has-after">GrizorteCar</p>
 
           <p class="footer-text">
-            Desenvolvedor líder de projetos comerciais de carros elétricos e bicicletas nos EUA. Desde sua fundação, a empresa dobrou seu faturamento a cada ano, com um número crescente de colaboradores.
+            A GrizorteCar, é uma oficina mecânica especializada na manutenção de veículos nacionais, importados e premium.
           </p>
 
           <a href="#" class="btn-outline">
-            <span class="span">Solicite um orçamento</span>
+            <span class="span">Fazer Agendamento</span>
 
             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
           </a>
@@ -145,32 +145,30 @@
         <ul class="footer-list">
 
           <li>
-            <p class="h6 has-after">Informações da Empresa</p>
+            <p class="h6 has-after">Saiba mais sobre nós</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Sobre nós</a>
+            <a href="#" class="footer-link">Inicio</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Nossos Projetos</a>
+            <a href="#" class="footer-link">Quem Somos</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Conheça nossa equipe</a>
+            <a href="#" class="footer-link">Nossos Serviços</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Notícias e Mídia</a>
+            <a href="#" class="footer-link">Contato</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Entre em contato</a>
+            <a href="#" class="footer-link">Blog</a>
           </li>
 
-          <li>
-            <a href="#" class="footer-link">Carreiras</a>
-          </li>
+
 
         </ul>
 
@@ -182,18 +180,19 @@
 
           <li>
             <address class="footer-text">
-              Rua 2307, Beverley Rd Brooklyn, Nova York 11226, Estados Unidos.
+              Rua 75, 46, Central - Goiânia, Goiás 
             </address>
-          </li>
+          </li> </br>
 
           <li>
             <p class="footer-text">
               Se tiver alguma dúvida ou precisar de ajuda, entre em contato com nossa equipe.
             </p>
           </li>
+          
 
           <li>
-            <a href="tel:00201061245741" class="contact-link">(002) 01061245741</a>
+            <a href="tel:62999999" class="contact-link">(62)9999-9999</a>
           </li>
 
         </ul>
@@ -209,17 +208,17 @@
               <a href="#" class="footer-bottom-link">Onde nos encontrar</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#" class="footer-bottom-link">Termos de pagamento</a>
-            </li>
+            </li> -->
 
             <li>
-              <a href="#" class="footer-bottom-link">Elemento de estatísticas</a>
+              <a href="#" class="footer-bottom-link">Política de privacidade</a>
             </li>
 
           </ul>
-
-          <p class="copyright">Feito com amor @codewithsadee</p>
+          
+          <p class="copyright">&copy; <?php echo date('Y'); ?> Cleidison Grizote</p>
         </div>
 
         <img src="./static/images/logo_branco.png" width="100" height="63" loading="lazy" alt="grizortecar">
