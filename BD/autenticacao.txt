@@ -1,10 +1,10 @@
 create table autenticacao(
 id_autenticacao int auto_increment,
-id_clientes int unique,
+id_cliente int unique,
 login varchar(255) not null unique,
 senha varchar(512) not null,
 data_criacao datetime not null,
 data_notificacao datetime, 
 primary key (id_autenticacao),
-foreign key (id_clientes) references clientes(id_clientes)
+foreign key (id_cliente) references clientes(id_clientes)
 )

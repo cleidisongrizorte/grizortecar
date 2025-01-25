@@ -1,9 +1,9 @@
 create table servico(
 id_servico int auto_increment,
-nome varchar(255) not null,
+nome varchar(255) not null unique,
 descricao varchar(255),
-preco varchar(30),
-duracao time,
-ativo varchar(15),
+preco decimal(10,2) not null,
+duracao int not null,
+status_servico varchar(255) not null,
 primary key(id_servico)
 );

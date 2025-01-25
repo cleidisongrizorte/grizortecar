@@ -7,6 +7,6 @@ email varchar(255),
 senha varchar(255),
 matricula varchar(255),
 funcao varchar(60),
-ativo varchar(30),
+status varchar(30),
 primary key(id_funcionario)
 );

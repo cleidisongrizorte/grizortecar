@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `autenticacao` (
   `id_autenticacao` int(11) NOT NULL,
-  `id_clientes` int(11) DEFAULT NULL,
+  `id_cliente` int(11) DEFAULT NULL,
   `login` varchar(255) NOT NULL,
   `senha` varchar(512) NOT NULL,
   `data_criacao` datetime NOT NULL,
@@ -52,11 +52,11 @@ CREATE TABLE `cadastro` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `clientes`
+-- Estrutura da tabela `cliente`
 --
 
-CREATE TABLE `clientes` (
-  `id_clientes` int(11) NOT NULL,
+CREATE TABLE `cliente` (
+  `id_cliente` int(11) NOT NULL,
   `cpf` char(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `telefone` varchar(20) DEFAULT NULL,
@@ -102,7 +102,7 @@ CREATE TABLE `funcionario` (
   `senha` varchar(255) DEFAULT NULL,
   `matricula` varchar(255) DEFAULT NULL,
   `funcao` varchar(60) DEFAULT NULL,
-  `ativo` varchar(30) DEFAULT NULL
+  `status` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -130,7 +130,7 @@ CREATE TABLE `servico` (
   `descricao` varchar(255) DEFAULT NULL,
   `preco` varchar(30) DEFAULT NULL,
   `duracao` time DEFAULT NULL,
-  `ativo` varchar(15) DEFAULT NULL
+  `status` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -141,7 +141,7 @@ CREATE TABLE `servico` (
 
 CREATE TABLE `veiculo` (
   `id_veiculo` int(11) NOT NULL,
-  `id_clientes` int(11) DEFAULT NULL,
+  `id_cliente` int(11) DEFAULT NULL,
   `chassi` varchar(50) DEFAULT NULL,
   `placa` varchar(50) NOT NULL,
   `marca` varchar(50) NOT NULL,
@@ -161,7 +161,7 @@ CREATE TABLE `veiculo` (
 ALTER TABLE `autenticacao`
   ADD PRIMARY KEY (`id_autenticacao`),
   ADD UNIQUE KEY `login` (`login`),
-  ADD UNIQUE KEY `id_clientes` (`id_clientes`);
+  ADD UNIQUE KEY `id_cliente` (`id_cliente`);
 
 --
 -- Índices para tabela `cadastro`
@@ -170,10 +170,10 @@ ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id_cadastro`);
 
 --
--- Índices para tabela `clientes`
+-- Índices para tabela `cliente`
 --
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id_clientes`),
+ALTER TABLE `cliente`
+  ADD PRIMARY KEY (`id_cliente`),
   ADD UNIQUE KEY `cpf` (`cpf`);
 
 --
@@ -205,7 +205,7 @@ ALTER TABLE `servico`
 --
 ALTER TABLE `veiculo`
   ADD PRIMARY KEY (`id_veiculo`),
-  ADD KEY `id_clientes` (`id_clientes`);
+  ADD KEY `id_cliente` (`id_cliente`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -224,10 +224,10 @@ ALTER TABLE `cadastro`
   MODIFY `id_cadastro` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `clientes`
+-- AUTO_INCREMENT de tabela `cliente`
 --
-ALTER TABLE `clientes`
-  MODIFY `id_clientes` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `cliente`
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `empresa`
@@ -267,13 +267,13 @@ ALTER TABLE `veiculo`
 -- Limitadores para a tabela `autenticacao`
 --
 ALTER TABLE `autenticacao`
-  ADD CONSTRAINT `autenticacao_ibfk_1` FOREIGN KEY (`id_clientes`) REFERENCES `clientes` (`id_clientes`);
+  ADD CONSTRAINT `autenticacao_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`);
 
 --
 -- Limitadores para a tabela `veiculo`
 --
 ALTER TABLE `veiculo`
-  ADD CONSTRAINT `veiculo_ibfk_1` FOREIGN KEY (`id_clientes`) REFERENCES `clientes` (`id_clientes`);
+  ADD CONSTRAINT `veiculo_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
