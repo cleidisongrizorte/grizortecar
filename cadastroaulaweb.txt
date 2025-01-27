@@ -1,7 +1,0 @@
-create table cadastro (
-id_cadastro int auto_increment,
-nome varchar(255) not null,
-email varchar(255),
-endereco varchar(255),
-primary key(id_cadastro)
-);

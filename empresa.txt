@@ -1,9 +1,0 @@
-create table empresa (
-id_empresa int auto_increment,
-nome varchar(255) not null,
-cnpj varchar(30),
-telefone varchar(30),
-email varchar(255),
-endereco varchar(255),
-primary key(id_empresa)
-);
