@@ -38,9 +38,6 @@ class Database
         }
 
     }
-
-
-
 }
 
 ?>

@@ -1,11 +1,55 @@
-tRightPos="1129" ExpandedHeight="0" TopContaner="26"/>
-			<Pane-26 Type="2" DockingCX="220" DockingCY="150" Horiz="1" Panes="1" Pane-1="27"/>
-			<Pane-27 Type="1" DockingCX="220" DockingCY="150" Panes="0"/>
-			<Pane-28 Type="2" DockingCX="1910" Panes="2" Pane-1="29" Pane-2="45"/>
-			<Pane-29 Type="2" DockingCX="1910" Horiz="1" Panes="2" Pane-1="30" Pane-2="44"/>
-			<Pane-30 Type="2" DockingCX="1584" Panes="1" Pane-1="31"/>
-			<Pane-31 Type="2" DockingCX="1889" DockingCY="883" Horiz="1" Panes="4" Pane-1="32" Pane-2="35" Pane-3="42" Pane-4="43"/>
-			<Pane-32 Type="2" DockingCX="330" DockingCY="828" Panes="2" Pane-1="33" Pane-2="34"/>
-			<Pane-33 Type="1" DockingCX="220" DockingCY="572" Panes="4" Selected="1" Pane-1="1" Pane-2="8" Pane-3="3" Pane-4="6"/>
-			<Pane-34 Type="1" DockingCX="220" DockingCY="252" Panes="1" Selected="2" Pane-1="2"/>
-			
+<?php
+
+include_once __DIR__ . '/ClienteView.php';
+
+class ClienteControl {
+    // Método que trata a requisição do usuário
+    public function handleRequest($action, $params) {
+        
+        // Verifica se a requisição é POST e se existe ação definida
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            switch ($action) {
+                case 'cadastrar':
+                    // Implementar lógica para cadastrar um cliente
+                    // Exemplo: chamar um modelo de cliente para salvar os dados no banco
+                    break;
+                
+                case 'atualizar':    
+                    // Implementar lógica para atualizar os dados do cliente
+                    // Exemplo: pegar o ID do cliente e atualizar as informações
+                    break;
+                    
+                case 'apagar':
+                    // Implementar lógica para apagar um cliente
+                    // Exemplo: pegar o ID do cliente e remover do banco de dados
+                    break;
+            }
+        } else {
+            // Caso a requisição não seja POST (ex: GET), trata outras ações
+            switch($action) {
+                case 'listar':
+                    // Exibir lista de clientes
+                    // Exemplo: Consultar clientes no banco e passar para a view
+                    break;
+
+                case 'novo':
+                    // Exibir formulário de cadastro de novo cliente
+                    $view = new ClienteView();
+                    $view->exibirFormularioCadastro();
+                    break;
+                    
+                case 'atualizar':
+                    // Exibir formulário para atualizar os dados de um cliente
+                    // Exemplo: Mostrar formulário com dados do cliente para edição
+                    break;
+
+                case 'apagar':
+                    // Exibir mensagem de confirmação antes de apagar um cliente
+                    // Exemplo: Mostrar cliente que será apagado e perguntar se o usuário deseja continuar
+                    break;
+            }
+        }
+    }
+}
+
+?>
