@@ -41,7 +41,7 @@
     <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./static/css/footer.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
 
     <!-- 
     - preload images
@@ -85,7 +85,7 @@
           </ul>
         </nav>
 
-        <a href="login.php" class="btn btn-primary">
+        <a href="../login.php" class="btn btn-primary">
           <span class="span">Entrar Conta</span>
 
           <span class="material-symbols-rounded">arrow_forward</span>
@@ -110,10 +110,10 @@
           aria-label="home"
           style="background-image: url('./static/images/bannerheader.jpg')">
           <div class="container">
-            <div class="hero-content">
+            <!-- <div class="hero-content">
               <p class="section-subtitle :dark">
                 GrizorteCar
-              </p>
+              </p> -->
             </div>
           </div>
         </section>

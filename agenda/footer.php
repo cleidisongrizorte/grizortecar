@@ -21,7 +21,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./static/css/footer.css">
+  <link rel="stylesheet" href="./static/css/style.css">
   
 
   <!-- 
