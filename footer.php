@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 
-    - primeira meta tags
+    - primeira meta tags2
   -->
     <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
     <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados." />
