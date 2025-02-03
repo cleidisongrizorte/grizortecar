@@ -11,7 +11,7 @@ function loginFunction() {
   loginForm.style.opacity = 1;
   registerForm.style.left = "150%";
   registerForm.style.opacity = 0;
-  wrapper.style.height = "500px";
+  wrapper.style.height = "550px";
   loginTitle.style.top = "50%";
   loginTitle.style.opacity = 1;
   registerTitle.style.top = "50px";
@@ -23,7 +23,7 @@ function registerFunction() {
   loginForm.style.opacity = 0;
   registerForm.style.left = "50%";
   registerForm.style.opacity = 1;
-  wrapper.style.height = "595px";
+  wrapper.style.height = "620px";
   loginTitle.style.top = "-60px";
   loginTitle.style.opacity = 0;
   registerTitle.style.top = "50%";

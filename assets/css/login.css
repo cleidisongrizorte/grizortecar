@@ -42,11 +42,11 @@
 /* WRAPPER */
 .login-wrapper {
   position: relative;
-  width: 430px;
-  height: 500px;
+  width: 440px;
+  height: 540px;
   background-color: var(--white-color);
   border-radius: 15px;
-  padding: 120px 32px 64px;
+  padding: 120px 32px 74px;
   border: 1px solid var(--primary-color);
   box-shadow: 0 8px 15px var(--shadow-color);
   transition: var(--transition-3s);
