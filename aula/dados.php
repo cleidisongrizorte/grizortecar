@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mysqli_stmt_bind_param($stmt, "sss", $nome, $email, $senha);
         
         if (mysqli_stmt_execute($stmt)) {
-            header("Location: loginaula.php");
+            header("Location:login.php");
             exit();
         } else {
             echo "Erro ao executar a query: " . mysqli_error($conn);

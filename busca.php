@@ -27,7 +27,7 @@
             exit;
         } else {
     // Senha inválida, redireciona de volta com a mensagem de erro
-    header('Location: loginaula.php?error=invalid');
+    header('Location: login.php?error=invalid');
     exit;
         }
 

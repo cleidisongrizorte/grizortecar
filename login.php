@@ -1,124 +1,101 @@
+
+<!-- // Exibir o header -->
+<?php include 'header2.php';?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
-    <!-- - primeira meta tags -->
-  
-    <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-    <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados." />
-    <meta
-      name="description"
-      content="Oficina Mecânica de veículos nacionais e importados."
-    />
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- 
-    - material icon font
-  -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    
-
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
-  </head>
-      <!-- #HEADER -->
-    <?php include 'header2.php'; ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/login.css">    
+</head>
 <body>
-    <div class="telalogin2">
-        <div class="telalogin" id="telalogin">
-          <!-- aqui e tela de cadastro -->
-        <div class="form-container sign-up">
-            <form action='login.php' method='post'>
-                <h1 class="h2 section-title">Crie sua conta</h1>
-                <span>Preencha os dados abaixo</span>
-                <input type="text" placeholder="Nome" name="nome" required>
-                <!-- <input type="text" placeholder="Telefone" name="telefone"> -->
-                <input type="email" placeholder="Email" name="email" required>
-                <input type="password" placeholder="Senha" name="senha" required>
-                <button>Criar Conta</button>
-                 <!-- <input class="btn" type="submit" value="Enviar"> -->
-            </form>
-        </div>
-        <!-- fim tela de cadastro -->
-        <div class="form-container sign-in">
-            <form action="login.php" method='post'>
-                <h1 class="h2 section-title">Entrar</h1>
-                <span>Entra com seu email e senha</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <a href="#">Esqueceu a sua senha?</a>
-                <button>Entrar</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Bem Vindo de Volta!</h1>
-                    <p>Já tem conta? Clique em Entrar.</p>
-                    <button class="hidden" id="login">Entrar</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Olá, Amigo!</h1>
-                    <p>Não tem conta? Clique em Criar Conta.</p>
-                    <button class="hidden" id="register">Criar Conta</button>
-                </div>
+    <div class="login-body">
+    <div class="login-wrapper">
+        <div class="form-header">
+            <div class="titles">
+                <div class="title-login">Entrar</div>
+                <div class="title-register">Registrar</div>
             </div>
         </div>
+
+        <!-- codido de mensagem de erro -->
+    <div class="error-message">
+    <?php 
+        if (isset($_GET['error']) && $_GET['error'] == 'invalid') {
+            echo '<p style="color: red;">Senha ou email inválida. Tente novamente.</p>';
+        }
+    ?>
+    </div>   
+        <!-- LOGIN FORM -->
+        <form action="busca.php" method='post' class="login-form" autocomplete="off">
+            <div class="input-box">
+                <input type="email" class="input-field" id="log-email" name="email" required>
+                <label for="log-email" class="label">Email</label>
+                <i class='bx bx-envelope icon'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="log-pass" name="senha" required>
+                <label for="log-pass" class="label">Senha</label>
+                <i class='bx bx-lock-alt icon' ></i>
+            </div>
+            <div class="form-cols">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <a href="#">Esqueci-me senha?</a>
+                </div>
+            </div>
+            <div class="input-box">
+                <button class="btn-submit" id="SignInBtn">Entrar <i class='bx bx-log-in' ></i></button>
+            </div>
+            <div class="switch-form">
+                <span>Não tenho conta? <a href="#" onclick="registerFunction()">Registrar</a></span>
+            </div>
+        </form>
+
+        <!-- REGISTER FORM -->
+        <form action="dados.php" method='post' class="register-form" autocomplete="off">
+            <div class="input-box">
+                <input type="text" class="input-field" id="reg-name" name="nome" required>
+                <label for="reg-name" class="label">Nome</label>
+                <i class='bx bx-user icon' ></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="reg-email" name="email" required>
+                <label for="reg-email" class="label">Email</label>
+                <i class='bx bx-envelope icon'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="reg-pass" name="senha" required>
+                <label for="reg-pass" class="label">Senha</label>
+                <i class='bx bx-lock-alt icon' ></i>
+            </div>
+            <div class="form-cols">
+                <div class="col-1">
+                    <input type="checkbox" id="agree">
+                    <label for="agree"> Eu concordo com os termos e condições.</label>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="input-box">
+                <button class="btn-submit" id="SignUpBtn">Cadastrar <i class='bx bx-user-plus' ></i></button>
+            </div>
+            <div class="switch-form">
+                <span>Já tenho uma conta? <a href="#" onclick="loginFunction()">Entrar</a></span>
+            </div>
+        </form>
     </div>
-    </div>  
+    </div>
+
     
 </body>
-    <!-- #FOOTER -->
-    <?php include 'footer.php'; ?>
-
-    <script src="./assets/js/script.js"></script>
+<script src="./assets/js/login2.js"></script>
 </html>
 
-  <!-- comando para o cadastro salvar no banco de dados -->
-<?php
+<!-- // Exibir o footer -->
+<?php include 'footer.php'; ?>
 
-include_once __DIR__ . '/agenda/app/cliente/Cliente.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST')
-{
-
-    $cliente = new Cliente(null,$_POST['nome'],$_POST["telefone"],$_POST["email"],$_POST["senha"],);
-
-    if ($cliente->cadastrar())
-    {
-        echo "Cliente cadastrado com sucesso!";
-    }
-    else {
-        echo "Erro ao cadastrar o cliente!";
-    }
-  }
-?>

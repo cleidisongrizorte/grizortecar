@@ -108,6 +108,7 @@
           class="section service has-bg-image"
           aria-labelledby="service-label"
           style="background-image: url('./assets/images/service-bg.jpg')"
+          id="servico"
         >
           <div class="container">
             <p class="section-subtitle :light" id="service-label">

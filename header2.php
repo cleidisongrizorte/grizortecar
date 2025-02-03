@@ -68,7 +68,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Serviços</a>
+              <a href="index.php#servico" class="navbar-link">Serviços</a>
             </li>
 
             <li>
