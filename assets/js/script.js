@@ -18,16 +18,3 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("rolagem", window.scrollY > 0);
 });
 
-// // tela de login
-
-const container = document.getElementById("telalogin");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
-
-registerBtn.addEventListener("click", () => {
-  container.classList.add("active");
-});
-
-loginBtn.addEventListener("click", () => {
-  container.classList.remove("active");
-});
