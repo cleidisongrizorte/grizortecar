@@ -25,8 +25,8 @@
         <!-- codido de mensagem de erro -->
     <div class="error-message">
     <?php 
-        if (isset($_GET['error']) && $_GET['error'] == 'invalid') {
-            echo '<p style="color: red;">Senha ou email inválida. Tente novamente.</p>';
+        if (isset($_GET['error']) && $_GET['error'] == 'login-invalido') {
+            echo '<p style="color: red;">Email ou senha inválida. Tente novamente.</p>';
         }
     ?>
     </div>   

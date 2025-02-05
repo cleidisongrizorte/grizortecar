@@ -7,3 +7,6 @@ email varchar(255),
 endereco varchar(255),
 primary key(id_empresa)
 );
+
+
+INSERT INTO `empresa`(`nome`, `cnpj`, `telefone`, `email`, `endereco`) VALUES ('GrizorteCar','12345678000123','6299999999','grizortecar@gmail.com','Rua 75');

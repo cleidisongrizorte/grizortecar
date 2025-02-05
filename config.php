@@ -4,7 +4,7 @@
 $servidor = "localhost";
 $dbusuario = "grizorte";
 $dbsenha = "81654325";
-$dbnome = "agenda";
+$dbnome = "aula";
 $conn = mysqli_connect($servidor,$dbusuario,$dbsenha,$dbnome);
 
 ?>

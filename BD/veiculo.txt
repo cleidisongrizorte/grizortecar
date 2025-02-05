@@ -11,3 +11,6 @@ descricao varchar(255),
 primary key (id_veiculo),
 foreign key (id_cliente) references cliente (id_clientes)
 );
+
+INSERT INTO `veiculo`(`id_cliente`, `chassi`, `placa`, `marca`, `modelo`, `cor`, `ano_fabricao`, `descricao`) VALUES ('1','192546','OGQ2525','Hyundai','HB20','Vermelho','2025','novo');
+INSERT INTO `veiculo`(`id_cliente`, `chassi`, `placa`, `marca`, `modelo`, `cor`, `ano_fabricao`, `descricao`) VALUES ('1','1q192546','OGQ1199','Mitsubishi','L200 Triton','preto','2024','restaurado');
