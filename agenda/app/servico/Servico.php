@@ -13,9 +13,9 @@ class Servico{
 
     // Método construtor
     public function __construct($id_servico, $nome, $descricao, $preco, $status){
-        $this->id_servico = $id_servico;  // Corrigido
+        $this->id_servico = $id_servico; 
         $this->nome = $nome;
-        $this->descricao = $descricao;   // Corrigido
+        $this->descricao = $descricao;  
         $this->preco = $preco;
         $this->status = $status;
     }
@@ -39,7 +39,7 @@ class Servico{
 
     // Métodos set
     public function setId_servico($id_servico){
-        $this->id_servico = $id_servico;  // Corrigido
+        $this->id_servico = $id_servico;  
     }
 
     public function setNome($nome) {
