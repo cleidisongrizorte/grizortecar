@@ -8,14 +8,20 @@ class Cliente {
     // Atributos
     private $id;
     private $nome;
+    private $sobrenome;
+    private $data_nascimento;
+    private $genero;
     private $telefone;
     private $email;
     private $senha;
 
     // Método construtor
-    public function __construct($id, $nome, $telefone, $email, $senha) {
+    public function __construct($id, $nome, $sobrenome, $data_nascimento, $genero, $telefone, $email, $senha) {
         $this->id = $id;
         $this->nome = $nome;
+        $this->sobrenome = $sobrenome;
+        $this->data_nascimento = $data_nascimento;
+        $this->genero = $genero;
         $this->telefone = $telefone;
         $this->email = $email;
         $this->senha = $senha;
@@ -25,10 +31,20 @@ class Cliente {
     public function getId() {
         return $this->id;
     }
+     public function getNome() {
+    return $this->nome;
+    } 
 
-    public function getNome() {
-        return $this->nome;
+    public function getSobrenome() {
+        return $this->sobrenome;
     }
+
+        public function getData_nascimento() {
+        return $this->data_nascimento;
+    }
+        public function getGenero() {
+        return $this->genero;
+    }   
 
     public function getTelefone() {
         return $this->telefone;
@@ -45,6 +61,15 @@ class Cliente {
 
     public function setNome($nome) {
         $this->nome = $nome;
+    }
+        public function setSobrenome($sobrenome) {
+        $this->sobrenome = $sobrenome;
+    }
+        public function setData_nascimento($data_nascimento) {
+        $this->data_nascimento = $data_nascimento;
+    }
+        public function setGenero($genero) {
+        $this->genero = $genero;
     }
 
     public function setTelefone($telefone) {
@@ -66,8 +91,8 @@ class Cliente {
         $conn = $db->connect();
 
         // Preparar e executar a query de inserção
-        $stmt = $conn->prepare("INSERT INTO cliente(nome, telefone, email, senha) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $this->nome, $this->telefone, $this->email, $this->senha);
+        $stmt = $conn->prepare("INSERT INTO cliente(nome, sobrenome, data_nascimento, genero, telefone, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssss", $this->nome, $this->sobrenome, $this->data_nascimento, $this->genero, $this->telefone, $this->email, $this->senha);
 
         // Executar e verificar o sucesso
         if ($stmt->execute()) {

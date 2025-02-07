@@ -1,8 +1,3 @@
-// "use strict";
-
-/**
- * MOBILE NAVBAR TOGGLE
- */
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 
@@ -18,16 +13,13 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("rolagem", window.scrollY > 0);
 });
 
-// // tela de login
+// Função da area de cadastro cliente da opção de visualizar a senha
+const passwordIcons = document.querySelectorAll(".password-icon");
 
-const container = document.getElementById("telalogin");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
-
-registerBtn.addEventListener("click", () => {
-  container.classList.add("active");
-});
-
-loginBtn.addEventListener("click", () => {
-  container.classList.remove("active");
+passwordIcons.forEach((icon) => {
+  icon.addEventListener("click", function () {
+    const input = this.parentElement.querySelector(".form-control");
+    input.type = input.type === "password" ? "text" : "password";
+    this.classList.toggle("fa-eye");
+  });
 });

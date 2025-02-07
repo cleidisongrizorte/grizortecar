@@ -46,8 +46,8 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" /> -->
   </head>
 <body>
   <header class="header" id="header">

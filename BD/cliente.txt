@@ -1,6 +1,9 @@
 create table cliente (
 id_cliente int auto_increment,
 nome varchar(255) not null,
+sobrenome varchar(255) not null,
+data_nascimento date,
+genero varchar(20),
 telefone varchar(20),
 email varchar(255)not null,
 senha varchar(255) not null,
