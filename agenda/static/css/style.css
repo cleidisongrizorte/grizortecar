@@ -589,175 +589,172 @@ header.rolagem {
   #tela Cadastro
 \*-----------------------------------*/
 .cadastro-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--black-coral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--black-coral);
 }
 
 .btn-default {
-    background-color: var(--yellow-green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-    gap: 8px;
-    height: fit-content;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+  background-color: var(--yellow-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  gap: 8px;
+  height: fit-content;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .btn-default:hover {
-    background-color: var(--azul);
+  background-color: var(--azul);
 }
 
 #form_container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    height: 100%;
-    background-color: #f6f8ff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);    
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  background-color: #f6f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 #form_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #form_title {
-    font-weight: 500;
-    color: #272727;
-    position: relative;
+  font-weight: 500;
+  color: #272727;
+  position: relative;
 }
 
 #form_title::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    border-radius: 30px;
-    background-color: var(--yellow-green);
-    left: 0;
-    bottom: 0;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: var(--yellow-green);
+  left: 0;
+  bottom: 0;
 }
 
 #form {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 32px;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
 }
 
 #input_container {
-    display: grid;
-    gap: 24px;
+  display: grid;
+  gap: 24px;
 }
 
 .form-label {
-    /* font-size: 16px; */
-    color: #404044;
-    font-weight: 500;    
+  /* font-size: 16px; */
+  color: #404044;
+  font-weight: 500;
 }
 
 .input-field {
-    display: flex;
-    align-items: center;
-    background-color: #ffff;
-    border-radius: 8px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .input-field i {
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 20px;
-    color: #404044;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  color: #404044;
 }
 
 .form-control {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
 }
 
 .input-field .password-icon:hover {
-    cursor: pointer;
-    color: #676770;
+  cursor: pointer;
+  color: #676770;
 }
 
 .form-control:focus {
-    outline: none;
+  outline: none;
 }
 
 .input-box .input-field:focus-within {
-    outline: 2px solid #6366f1;
+  outline: 2px solid #6366f1;
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px white inset !important;
-    color: #000;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  color: #000;
 }
 
 .radio-container {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 #gender_inputs {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .radio-box {
-    display: flex;
-    gap: 4px;
-    align-items: center;
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
 
 .form-control[type="radio"] {
-    accent-color: #6366f1;
+  accent-color: #6366f1;
 }
-
-@media screen and (max-width: 500px) {
-    #form_container {
-        width: 100%;
-        min-height: 100vh;
-        padding: 32px;
-    }
-
-    #input_container {
-        display: flex;
-        flex-direction: column;
-        gap: 38px;
-    }
-
-    .form-control[type="date"] {
-        background-color: #fff;
-    }
-  }
-
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-/* responsivel para largura tela 575px */
+/* responsivel para largura tela 500px */
+
+/* tela de cadastro */
+@media screen and (max-width: 500px) {
+  #form_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+  }
+
+  #input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .form-control[type="date"] {
+    background-color: #fff;
+  }
+}
+
 @media (min-width: 575px) {
   :root {
     --fs-2: 4.2rem;
@@ -858,7 +855,7 @@ input:-webkit-autofill {
 
   .navbar-link:is(:hover, :focus-visible) {
     background: none;
-    color: var(--white);    
+    color: var(--white);
   }
 
   .navbar-link::after {

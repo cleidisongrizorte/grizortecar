@@ -113,8 +113,8 @@ class Cliente {
         $conn = $db->connect();
 
         // Preparar para atualizar
-        $stmt = $conn->prepare("UPDATE cliente SET(nome, telefone, email, senha) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $this->nome, $this->telefone, $this->email, $this->senha);
+        $stmt = $conn->prepare("UPDATE cliente SET(nome, sobrenome, data_nascimento, genero, telefone, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssss", $this->nome, $this->sobrenome, $this->data_nascimento, $this->genero, $this->telefone, $this->email, $this->senha);
 
         // Executar e verificar o sucesso
         if ($stmt->execute()) {
