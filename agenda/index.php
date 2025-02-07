@@ -1,11 +1,12 @@
 <?php
 
-// Exibir o header
+// Inicia a sessão no início de todas as páginas
+session_start();
+
+//Exibir o header
 include_once 'header.php';
 
-
-
-// Acionar controlador
+// Aciona controlador
 
 // Obter o controle e ação
 $control = $_GET['control'] ?? 'index';
@@ -13,12 +14,14 @@ $action = $_GET['action'] ?? 'listar';
 
 $controlClass = ucfirst($control) . 'Control';
 
-function loadControl($control, $controlClass) {
-    $file = __DIR__ . '/app/' . $control . '/' . $controlClass . '.php'; 
+function loadControl($control, $controlClass)
+{
+
+    $file = __DIR__ . '/app/' . $control . '/' .  $controlClass . '.php';
     if (file_exists($file)) {
         include_once $file;
     } else {
-        echo 'Arquivo do controlador não encontrado'; 
+        echo "Arquivo do controlador não encontrado.";
         exit;
     }
 }
@@ -26,20 +29,16 @@ function loadControl($control, $controlClass) {
 loadControl($control, $controlClass);
 
 if (class_exists($controlClass)) {
+
     $controller = new $controlClass();
 
-    // Passar os parâmetros (POST e GET)
+    // Passa os parâmetros (POST e GET)
     $params = array_merge($_POST, $_GET);
 
-    // Executar a ação
+    // Executa a ação
     $controller->handleRequest($action, $params);
 }
 
 
-
-?>
-
-// Exibir o footer
-<?php include 'footer.php'; ?>
-
-
+//Exibir o footer
+include_once 'footer.php';

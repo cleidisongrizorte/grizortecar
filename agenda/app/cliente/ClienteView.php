@@ -6,7 +6,7 @@ class ClienteView
         // HTML  para o formulario de cadastro de cliente
         echo "
         <h3>Cadastrar Cliente</h3>
-        <form action='processarCadastro.php' method='POST'>
+        <form action='?control=cliente&action=cadastrar' method='POST'>
             <label for='nome'>Nome:</label><br>
             <input type='text' id='nome' name='nome' required><br><br>
             
@@ -19,7 +19,10 @@ class ClienteView
             <label for='telefone'>Telefone:</label><br>
             <input type='text' id='telefone' name='telefone' required><br><br>
             
-            <input type='submit' value='Cadastrar'>
+            <div class='col-12'>
+                <button type='submit' class='btn btn-primary'>Enviar</button>
+            </div>
+            9999999999999
         </form>
         ";
     }
