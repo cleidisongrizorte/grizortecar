@@ -9,15 +9,17 @@ class Servico{
     private $nome;
     private $descricao;
     private $preco;
-    private $status;
+    private $duracao;
+    private $status_servico;
 
     // Método construtor
-    public function __construct($id_servico, $nome, $descricao, $preco, $status){
+    public function __construct($id_servico, $nome, $descricao, $preco, $duracao, $status_servico){
         $this->id_servico = $id_servico; 
         $this->nome = $nome;
         $this->descricao = $descricao;  
         $this->preco = $preco;
-        $this->status = $status;
+        $this->duracao = $duracao;
+        $this->status_servico = $status_servico;
     }
 
     // Métodos get
@@ -33,8 +35,11 @@ class Servico{
     public function getPreco() {
         return $this->preco;
     }
-    public function getStatus() {
-        return $this->status;
+    public function getDuracao() {
+        return $this->duracao;
+    }
+    public function getstatus_servico() {
+        return $this->status_servico;
     }
 
     // Métodos set
@@ -51,8 +56,11 @@ class Servico{
     public function setPreco($preco){
         $this->preco = $preco;
     }
-    public function setStatus($status){
-        $this->status = $status;
+    public function setDuracao($duracao){
+        $this->preco = $duracao;
+    }
+    public function setstatus_servico($status_servico){
+        $this->status_servico = $status_servico;
     }
 
     // Método para cadastrar serviço
@@ -62,8 +70,8 @@ class Servico{
         $conn = $db->connect();
 
         // Preparar a execução da query de inserção
-        $stmt = $conn->prepare("INSERT INTO servico (nome, descricao, preco, status) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $this->nome, $this->descricao, $this->preco, $this->status);
+        $stmt = $conn->prepare("INSERT INTO servico (nome, descricao, preco, duracao, status_servico) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $this->nome, $this->descricao, $this->preco, $this->duracao, $this->status_servico);
 
         // Executar e verificar o sucesso
         if ($stmt->execute()){
@@ -84,8 +92,8 @@ class Servico{
         $conn = $db->connect();
 
         // Preparar a execução da query de atualização
-        $stmt = $conn->prepare("UPDATE servico SET nome = ?, descricao = ?, preco = ?, status = ? WHERE id_servico = ?");
-        $stmt->bind_param("ssssi", $this->nome, $this->descricao, $this->preco, $this->status, $this->id_servico);
+        $stmt = $conn->prepare("UPDATE servico SET nome = ?, descricao = ?, preco = ?, duracao = ?, status_servico = ? WHERE id_servico = ?");
+        $stmt->bind_param("ssssi", $this->nome, $this->descricao, $this->preco,  $this->duracao, $this->status_servico, $this->id_servico);
 
         // Executar e verificar o sucesso
         if ($stmt->execute()){

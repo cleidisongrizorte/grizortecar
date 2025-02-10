@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . '/ServicoView.php';
+include_once __DIR__ . '/Servico.php';
 
 class ServicoControl {
     // Método que trata a requisição do usuário
@@ -10,31 +11,45 @@ class ServicoControl {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             switch ($action) {
                 case 'cadastrar':
-                    // Implementar lógica para cadastrar um cliente
-                    // Exemplo: chamar um modelo de cliente para salvar os dados no banco
+                    $nome = $params['nome'];
+                    $descricao = $params['descricao'];
+                    $preco = $params['preco'];
+                    $duracao = $params['duracao'];
+                    $status_servico = $params['status_servico'];
+
+                    $servico = new Servico(null, $nome, $descricao, $preco,$duracao, $status_servico);
+
+                    if ($servico->cadastrar()) {
+                        $_SESSION['message'] = [
+                            'text' => 'Seu Serviço foi cadastrado com sucesso.',
+                            'type' => 'success'
+                        ];
+                        echo "Seu Serviço foi cadastrado com sucesso";
+                    } else {
+                        $_SESSION['message'] = [
+                            'text' => 'Ocorreu um erro ao cadastrar o serviço.',
+                            'type' => 'error'
+                        ];
+                        echo "Ocorreu erro ao realizar seu cadastro";
+                    }
+
+                    header('Location: ?control=index');
+                    exit(); // Garante que o redirecionamento ocorra e o script não continue
                     break;
-                
-                case 'atualizar':    
-                    // Implementar lógica para atualizar os dados do cliente
-                    // Exemplo: pegar o ID do cliente e atualizar as informações
-                    break;
-                    
-                case 'apagar':
-                    // Implementar lógica para apagar um cliente
-                    // Exemplo: pegar o ID do cliente e remover do banco de dados
-                    break;
+
+
+                case 'atualizar':
             }
         } else {
-            // Caso a requisição não seja POST (ex: GET), trata outras ações
-            switch($action) {
+            switch ($action) {
                 case 'listar':
-                    // Exibir lista de clientes
-                    // Exemplo: Consultar clientes no banco e passar para a view
+                    $view = new ServicoView();
+                    $view->listarServico();
                     break;
 
                 case 'novo':
-                    // Exibir formulário de cadastro de novo cliente
-                    $view = new SevicoView();
+                    // Exibir formulário de cadastro do cliente
+                    $view = new ServicoView();
                     $view->exibirFormularioCadastro();
                     break;
                     

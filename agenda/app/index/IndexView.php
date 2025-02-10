@@ -36,6 +36,11 @@ class IndexView
                             Realize seu cadastro
                         </a>
 
+                        <!-- Botão para realizar auto cadastro -->
+                        <a href='index.php?control=servico&action=novo' class='btn btn-primary'>
+                            Cadastrar Serviço
+                        </a>
+
                         <!-- Botão para acessar a lista de serviços -->
                         <a href='index.php?control=servicos&action=listar' class='btn btn-primary'>
                             Acessar Lista de Serviços

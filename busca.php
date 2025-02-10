@@ -23,7 +23,7 @@
 
         if ($linha) {
             // Redirecionar para a página principal
-            header("Location: index.php");
+            header("Location: ./agenda/");
             exit;
         } else {
     // Senha inválida, redireciona de volta com a mensagem de erro
