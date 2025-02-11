@@ -33,25 +33,15 @@ class ServicoView
                                 <label for="nome" class="form-label">Nome do Serviço</label>
                                 <div class="input-field">
                                     <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome do serviço" required>
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-solid fa-file-signature"></i>
                                 </div>
                             </div></br>
-            
-                            <!-- Campo de Descrição -->
-                            <div class="input-box">
-                                <label for="descricao" class="form-label">Descrição</label>
-                                <div class="input-field">
-                                    <input type="text" name="descricao" id="descricao" class="form-control" placeholder="fala sobre serviço" required>
-                                    <i class="fa-regular fa-user"></i>
-                                </div>
-                            </div></br>
-            
                             <!-- Campo de Preço -->
                             <div class="input-box">
                                 <label for="preco" class="form-label">Preço</label>
                                 <div class="input-field">
-                                    <input type="text" name="preco" id="preco" class="form-control" placeholder="Preço do serviço" required>
-                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="number" name="preco" id="preco" class="form-control" placeholder="Preço do serviço" required>
+                                    <i class="fa-solid fa-money-check-dollar"></i>
                                 </div>
                             </div></br>
             
@@ -59,10 +49,19 @@ class ServicoView
                             <div class="input-box">
                                 <label for="duracao" class="form-label">Duração para realizar o serviço</label>
                                 <div class="input-field">
-                                    <input type="text" name="duracao" id="duracao" class="form-control" placeholder="Tempo necessário para o serviço" required>
-                                    <i class="fa-regular fa-clock"></i>
+                                    <input type="number" name="duracao" id="duracao" class="form-control" placeholder="Tempo necessário para o serviço" required>
+                                    <i class="fa-solid fa-clock"></i>
                                 </div>
                             </div>
+                            </br>
+                            <!-- Campo de Descrição -->
+                                 <div class="input-box">
+                                <label for="descricao" class="form-label">Descrição Serviço</label>
+                                <div class="input-field">
+                                <textarea id="Descricao" name="descricao" rows="4" cols="40" placeholder="fala sobre serviço"></textarea>
+                                </div>
+                            </div></br>
+
             
                             <!-- Status do Serviço -->
                             <div class="radio-container">
