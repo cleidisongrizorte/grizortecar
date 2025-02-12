@@ -24,7 +24,8 @@ class Cliente {
         $this->genero = $genero;
         $this->telefone = $telefone;
         $this->email = $email;
-        $this->senha = $senha;
+        // Aqui fazemos o hash da senha antes de armazená-la
+        $this->senha = password_hash($senha, PASSWORD_BCRYPT);
     }
 
     // Métodos get
@@ -53,6 +54,9 @@ class Cliente {
     public function getEmail() {
         return $this->email;
     }
+        public function getSenha() {
+        return $this->senha;
+    }
 
     // Métodos set
     public function setId($id) {
@@ -80,8 +84,10 @@ class Cliente {
         $this->email = $email;
     }
 
+    // Este método também pode ser modificado para permitir alteração da senha
     public function setSenha($senha) {
-        $this->senha = $senha;
+        // Caso o usuário queira mudar a senha, aplicar o hash nela
+        $this->senha = password_hash($senha, PASSWORD_BCRYPT);
     }
 
     // Método para cadastrar cliente
