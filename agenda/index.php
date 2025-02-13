@@ -3,10 +3,13 @@
 // Inicia a sessão no início de todas as páginas
 session_start();
 
+// Inclui configurações da aplicação
+include_once './config/appconfig.php';
+
 //Exibir o header
 include_once 'header.php';
 
-// Aciona controlador
+
 
 // Obter o controle e ação
 $control = $_GET['control'] ?? 'index';

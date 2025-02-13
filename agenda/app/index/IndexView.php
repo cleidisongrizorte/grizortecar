@@ -28,37 +28,40 @@ class IndexView
             <div class='container mt-5'>
                 <div class='row justify-content-center'>
                     <div class='col-md-6 text-center'>
-                        <h1 class='mb-4'>Bem-vindo ao AgendaAqui</h1>
+                        <h1 class='mb-4'>Bem-vindo</h1>
                         <p class='lead mb-4'>Escolha uma opção para continuar:</p>
+            ";
 
-                         <!-- Botão para realizar auto cadastro -->
+
+        if (isset($_SESSION['user_id'])) {
+            echo " <!-- Botão para acessar a lista de serviços -->
+                        <a href='index.php?control=servicos&action=listar' class='btn btn-primary btn-lg btn-block mb-3'>
+                            Acessar Lista de Serviços
+                        </a>
+                        
+                        <a href='index.php?control=login&action=logout' class='btn btn-primary btn-lg btn-block mb-3'>
+                            Sair
+                        </a>";
+        } else {
+            echo " <!-- Botão para realizar auto cadastro -->                         
                         <a href='index.php?control=cliente&action=novo' class='btn btn-primary'>
                             Realize seu cadastro
                         </a>
 
-                        <!-- Botão para realizar auto cadastro -->
-                        <a href='index.php?control=servico&action=novo' class='btn btn-primary'>
-                            Cadastrar Serviço
-                        </a>
+                         <!-- Botão para realiar login -->
+                        <a href='index.php?control=login' class='btn btn-primary btn-lg btn-block mb-3'>
+                            Fazer login
+                        </a>";
+        }
 
-                          <!-- Botão para realizar auto cadastro -->
-                        <a href='index.php?control=funcionario&action=novo' class='btn btn-primary'>
-                            Cadastrar Funcionario
-                        </a>
-
-                        <!-- Botão para acessar a lista de serviços -->
-                        <a href='index.php?control=servicos&action=listar' class='btn btn-primary'>
-                            Acessar Lista de Serviços
-                        </a>
-
-                        <!-- Botão para acessar a página de administração -->
-                        <a href='/admin/index.php' class='btn btn-primary'>
-                            Acessar Página de Administração
-                        </a>
-                    </div>
+        echo "
+               <!-- Botão para acessar a página de administração -->
+                <a href='admin/' class='btn btn-secondary btn-lg btn-block'>
+                    Acessar Página de Administração
+                </a>
                 </div>
             </div>
-
+        </div>
         ";
     }
 }

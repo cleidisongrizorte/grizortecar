@@ -120,7 +120,9 @@ class ClienteView
    function listarClientes()
     {
 
-
-        echo "<br>Lista de Clientes<br>";
+        echo "<div class='container py-5'>";
+        echo "<h3>Lista de Clientes</h3>";
+        echo "<p>Aqui será exibida a lista de clientes cadastrados.</p>";
+        echo "</div>";
     }
 }

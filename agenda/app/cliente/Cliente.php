@@ -24,6 +24,7 @@ class Cliente {
         $this->genero = $genero;
         $this->telefone = $telefone;
         $this->email = $email;
+        //$this->senha = $senha;
         // Aqui fazemos o hash da senha antes de armazená-la
         $this->senha = password_hash($senha, PASSWORD_BCRYPT);
     }
@@ -84,10 +85,12 @@ class Cliente {
         $this->email = $email;
     }
 
-    // Este método também pode ser modificado para permitir alteração da senha
+
+
+    //Este método também pode ser modificado para permitir alteração da senha
     public function setSenha($senha) {
-        // Caso o usuário queira mudar a senha, aplicar o hash nela
-        $this->senha = password_hash($senha, PASSWORD_BCRYPT);
+        //Caso o usuário queira mudar a senha, aplicar o hash nela
+       $this->senha = password_hash($senha, PASSWORD_BCRYPT);
     }
 
     // Método para cadastrar cliente
@@ -140,9 +143,31 @@ class Cliente {
     }
 
     // Método para realizar alguma ação (ainda não implementado)
-    public function realizar() {
-        
+        public static function realizaLogin($email, $senha) {
+        // Conectar com o banco de dados
+        $db = new Database();
+        $conn = $db->connect();
+
+        $stmt = $conn->prepare("SELECT * FROM cliente WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($user = $result->fetch_assoc()) {
+           //if ($senha == $user['senha']) {
+                // Verifica a senha criptografada
+            if (password_verify($senha, $user['senha'])) {
+                // Autenticação bem-sucedida
+                $conn->close();
+                return new Cliente($user['id_cliente'], $user['nome'], $user['sobrenome'], $user['data_nascimento'], $user['genero'], $user['telefone'], $user['email'], $user['senha']);
+            }
+        }
+
+        $conn->close();
+        return false; // Falha na autenticação
+
     }
+    public function buscarClientes() {}
 }
 
 ?>
