@@ -22,6 +22,7 @@
 }
 
 /* REUSABLE ELEMENTS */
+
 .login-body a {
   text-decoration: none;
   color: var(--black-color);
@@ -37,6 +38,7 @@
   align-items: center;
   height: 110vh;
   background-color: var(--background-color);
+  
 }
 
 /* WRAPPER */
@@ -177,6 +179,45 @@
   gap: 6px;
 }
 /* SUBMIT BUTTON */
+
+.btn {
+  background-color: var(--black-color);
+  color: var(--white);
+  max-width: max-content;
+  font-family: var(--ff-chakra-petch);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  will-change: transform;
+}
+.btn-criar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  height: 50px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition-3s);  
+}
+.btn:is(:hover, :focus-visible) {
+  border-radius: 0;
+  border-top-right-radius: var(--radius-20);
+}
+
 .btn-submit {
   display: flex;
   align-items: center;

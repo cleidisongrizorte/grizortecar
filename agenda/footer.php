@@ -117,7 +117,7 @@
 
           <form action="#" class="newsletter-form">
 
-            <label for="email" class="label">Endereço de e-mail</label>
+            <!-- <label for="email" class="label">Endereço de e-mail</label> -->
 
             <input type="email" name="email" id="email" placeholder="Endereço de e-mail" required class="email-field">
 
