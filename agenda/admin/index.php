@@ -1,12 +1,16 @@
 <?php
-//Exibir o header
-include_once './header.php';
 
 // Inicia a sessão no início de todas as páginas
 session_start();
 
 // Inclui configurações da aplicação
-include_once './config/appconfig.php';
+include_once '../config/appconfig.php';
+
+//Exibir o header
+include_once  '../static/header.php';
+
+// Aciona controlador
+
 // Obter o controle e ação
 $control = $_GET['control'] ?? 'index';
 $action = $_GET['action'] ?? 'listar';
@@ -15,8 +19,9 @@ $controlClass = ucfirst($control) . 'Control';
 
 function loadControl($control, $controlClass)
 {
+    
+    $file = __DIR__ ."/" . $control . '/' .  $controlClass . '.php';
 
-    $file = __DIR__ . '/app/' . $control . '/' .  $controlClass . '.php';
     if (file_exists($file)) {
         include_once $file;
     } else {
@@ -40,4 +45,4 @@ if (class_exists($controlClass)) {
 
 
 //Exibir o footer
-include_once 'footer.php';
+include_once '../static/footer.php';

@@ -340,10 +340,10 @@
       <section class="section service" aria-labelledby="service-label">
         <div class="container">
 
-          <p class="section-subtitle has-before" id="service-label" data-reveal>What We Do!</p>
+          <p class="section-subtitle has-before" id="service-label" data-reveal>NOSSOS SERVIÇOS</p>
 
           <h2 class="h2 section-title" data-reveal>
-            What Advantages Will You Get Using An Escooter?
+            Conheca um pouco dos nosso serviços
           </h2>
 
           <div class="wrapper">
@@ -352,10 +352,10 @@
 
               <li class="service-item">
                 <div>
-                  <h3 class="h5 card-title">Recoverable Energy</h3>
+                  <h3 class="h5 card-title">Suspensão e Freio</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                    Se existe um grupo de peças de extrema importância no sistema automotivo,
                   </p>
                 </div>
 
@@ -366,29 +366,29 @@
 
               <li class="service-item">
                 <div>
-                  <h3 class="h5 card-title">Quick Installation</h3>
+                  <h3 class="h5 card-title">Mecânica Geral</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                   É a estrutura geral do veículo, pela qual são desmembradas...
                   </p>
                 </div>
 
                 <div class="card-icon">
-                  <ion-icon name="compass-outline" aria-hidden="true"></ion-icon>
+                  <ion-icon name="construct-outline"></ion-icon>
                 </div>
               </li>
 
               <li class="service-item">
                 <div>
-                  <h3 class="h5 card-title">Zero Contact Travel</h3>
+                  <h3 class="h5 card-title">Revisão Geral</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                    Todo veículo deve ser inspecionado regularmente. A revisão geral tem como finalidade
                   </p>
                 </div>
 
                 <div class="card-icon">
-                  <ion-icon name="bonfire-outline" aria-hidden="true"></ion-icon>
+                  <ion-icon name="car-sport-outline"></ion-icon>
                 </div>
               </li>
 
@@ -407,38 +407,38 @@
                 </div>
 
                 <div>
-                  <h3 class="h5 card-title">Recoverable Energy</h3>
+                  <h3 class="h5 card-title">Regulagem Eletrônica</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                    A função da injeção eletrônica é fazer a mistura de ar e combustível na dosagem
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="card-icon">
-                  <ion-icon name="compass-outline" aria-hidden="true"></ion-icon>
+                  <ion-icon name="construct-outline"></ion-icon>
                 </div>
 
                 <div>
-                  <h3 class="h5 card-title">Quick Installation</h3>
+                  <h3 class="h5 card-title">Alinhamento de Direção</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                    O Alinhamento de Direção do seu veículo com sistema computadorizado de alta precisão
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="card-icon">
-                  <ion-icon name="bonfire-outline" aria-hidden="true"></ion-icon>
+                  <ion-icon name="car-sport-outline"></ion-icon>
                 </div>
 
                 <div>
-                  <h3 class="h5 card-title">Zero Contact Travel</h3>
+                  <h3 class="h5 card-title">Serviços Hidráulico</h3>
 
                   <p class="card-text">
-                    Charge Your Electric Vehicle At Home Using One Of Our Smart.
+                    A direção hidráulica é o sistema que utiliza da mecânica dos fluidos
                   </p>
                 </div>
               </li>
@@ -464,15 +464,22 @@
           <div class="cta-card" data-reveal="left">
 
             <div>
-              <h2 class="h1 card-title">Designed for the our roads.</h2>
+              <h2 class="h1 card-title">Oficina Mecânica em Goiânia</h2>
 
               <p class="card-text">
-                Consectetur adipiscing elit sed do tempor labor dolore magna aliqua quis suspendisse.
+                <ul>
+                 <li>Ampla Infraestrutura</li>
+                <li>Equipe técnica profissional</li>
+                <li>Máquinas e equipamentos atualizados</li>
+                <li>Fácil localização</li>
+                </ul>
+
+               
               </p>
             </div>
 
             <a href="#" class="btn btn-primary">
-              <span class="span">Book Now</span>
+              <span class="span">Contato</span>
 
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </a>
