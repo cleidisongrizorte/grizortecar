@@ -34,19 +34,6 @@
 
 <body id="top">
 
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <!-- <div class=" preload-box" data-preloader>
-    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
-
-    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
-  </div> -->
-
-
-    <!--#HEADER-->
-
   <main>
     <article>
 
@@ -113,9 +100,7 @@
 
           <h3 class="h3 card-title">Inscreva-se para receber novidades</h3>
 
-          <form action="#" class="newsletter-form">
-
-            <!-- <label for="email" class="label">Endereço de e-mail</label> -->
+          <form action="#" class="newsletter-form">            
 
             <input type="email" name="email" id="email" placeholder="Endereço de e-mail" required class="email-field">
 

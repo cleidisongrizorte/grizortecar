@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,9 +10,9 @@
   <!-- 
     - primary meta tags
   -->
-  <title>GrizorteCar</title>
-  <meta name="title" content="Volti - Book Your Eco-Friendly Ride">
-  <meta name="description" content="This is a vahicle charging html template made by codewithsadee">
+<title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
+  <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
+  <meta name="description" content="site da oficina GrizorteCar">
 
   <!-- 
     - favicon

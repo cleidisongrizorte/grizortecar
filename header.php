@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,8 @@
   <!-- 
     - primary meta tags
   -->
-  <title>GrizorteCar - Sua oficina</title>
-  <meta name="title" content="GrizorteCar - Sua oficina">
+<title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
+  <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
   <meta name="description" content="site da oficina GrizorteCar">
 
   <!-- 
