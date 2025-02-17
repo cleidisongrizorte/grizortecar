@@ -17,30 +17,34 @@ class ClienteControl
             switch ($action) {
                 case 'cadastrar':
                     $nome = $params['nome'];
-                    $sobrenome = $params['sobrenome'];
-                    $data_nascimento = $params['data_nascimento'];
-                    $genero = $params['genero'];
                     $telefone = $params['telefone'];
                     $email = $params['email'];
                     $senha = $params['senha'];
 
-                    $cliente = new Cliente(null, $nome, $sobrenome, $data_nascimento, $genero, $telefone, $email, $senha);
+                    $cliente = new Cliente(null, $nome, $telefone, $email, $senha);
 
-                    if ($cliente->cadastrar()) {
+                    $resultado = $cliente->cadastrar();
+
+                    if ($resultado === true) {
                         $_SESSION['message'] = [
-                            'text' => 'Seu cadastro foi realizado com sucesso.',
+                            'text' => 'Seu cadastro foi realizado com sucesso. Efetue o login.',
                             'type' => 'success'
                         ];
-                        echo "Seu cadastro foi realizado com sucesso";
-                    } else {
+                        header('Location: ?control=login');
+                    } elseif ($resultado === "email_existente") {
                         $_SESSION['message'] = [
-                            'text' => 'Ocorreu um erro ao cadastrar a empresa.',
+                            'text' => 'Já tem uma conta com este e-mail, faça login.',
                             'type' => 'error'
                         ];
-                        echo "Ocorreu erro ao realizar seu cadastro";
+                        header('Location: ?control=login');
+                    } else {
+                        $_SESSION['message'] = [
+                            'text' => 'Ocorreu um erro ao realizar seu cadastro.',
+                            'type' => 'error'
+                        ];
+                        header('Location: ?control=cliente&action=cadastrar');
                     }
 
-                    header('Location: ?control=index');
                     exit(); // Garante que o redirecionamento ocorra e o script não continue
                     break;
 

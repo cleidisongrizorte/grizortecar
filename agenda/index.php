@@ -1,12 +1,16 @@
 <?php
-//Exibir o header
-include_once './header.php';
 
 // Inicia a sessão no início de todas as páginas
 session_start();
 
 // Inclui configurações da aplicação
-include_once './config/appconfig.php';
+include_once 'config/appconfig.php';
+
+//Exibir o header
+include_once 'static/header.php';
+
+// Aciona controlador
+
 // Obter o controle e ação
 $control = $_GET['control'] ?? 'index';
 $action = $_GET['action'] ?? 'listar';
@@ -25,6 +29,20 @@ function loadControl($control, $controlClass)
     }
 }
 
+//Controladores restritos
+$restrictedControllers = ['AgendamentoControl'];
+
+// Verifica se o controlador exige autenticação
+if (in_array($controlClass, $restrictedControllers)) {
+
+    if (!isset($_SESSION['user_id'])) {
+
+        //Redireciona para página de login
+        header('Location: ?control=login');
+        exit();
+    }
+}
+
 loadControl($control, $controlClass);
 
 if (class_exists($controlClass)) {
@@ -40,4 +58,4 @@ if (class_exists($controlClass)) {
 
 
 //Exibir o footer
-include_once 'footer.php';
+include_once 'static/footer.php';

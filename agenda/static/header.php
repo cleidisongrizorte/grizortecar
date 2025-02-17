@@ -2,95 +2,69 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Primary meta tags -->
-  <title>GrizorteCar - Sua oficina</title>
-  <meta name="title" content="GrizorteCar - Sua oficina">
-  <meta name="description" content="Site da oficina GrizorteCar">
+    <!-- Bootstrap CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Bootstrap JS (incluindo popper e bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom CSS link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ìcones bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Custom font link -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+    <!-- CSS Personalizado -->
+    <link rel='stylesheet' href='<?= BASE_URL ?>/agenda/static/css/styles.css'>
 
-  <!-- Preload images -->
-  <link rel="preload" as="image" href="./assets/images/loading.svg">
-  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <!-- Javascript -->
+    <script src="<?= BASE_URL ?>/agenda/static/js/scripts.js"></script>
 
+    <title>AgendaAqui - Agendamento de Serviços</title>
 </head>
 
-<body id="top">
+<body class="d-flex flex-column min-vh-100">
 
-  <!-- Preloader -->
-  <!-- <div class="preload-box" data-preloader>
-    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
-    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
-  </div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="<?= BASE_URL ?>/agenda/">
+                    <img src="<?= BASE_URL ?>/agenda/static/img/logo_app.png" alt="Logo App" width="400px"> <!-- Logo -->
+                </a>
+                <!-- Menu de Navegação -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= BASE_URL ?>/agenda">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= BASE_URL ?>/agenda/admin">Administração</a>
+                        </li>
 
-  <!-- Header -->
-  <header class="header" data-header>
-    <div class="container">
+                        <?php if (isset($_SESSION['user_name'])): ?>
+                            <?php $primeiroNome = explode(' ', $_SESSION['user_name'])[0]; ?>
+                            <!-- Dropdown do Usuário -->
+                            <li class="nav-item dropdown d-flex align-items-center">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Ícone de usuário circular -->
+                                    <i class="bi bi-person-circle me-2" style="font-size: 1.3rem; line-height: 1;"></i>
+                                    <span><?= htmlspecialchars($primeiroNome) ?></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="#">Modificar Perfil</a></li>
+                                    <li><a class="dropdown-item" href="index.php?control=login&action=logout">Sair</a></li>
+                                </ul>
+                            </li>
+                        <?php endif; ?>
 
-      <a href="#" class="logo">
-        <img src="./static/images/logo.png" width="160" height="50" alt="logo GrizorteCar">
-      </a>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Serviços</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Agendamento</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Sobre Nós</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Contato</a>
-          </li>
-        </ul>
-      </nav>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-      <div class="header-action">
-        <a href="tel:+12312345678901" class="contact-number">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-          <span>(62) 9999-8001</span>
-        </a>
-
-        <a href="#" class="btn btn-primary">
-          <span>Entrar</span>
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
-      </div>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
-        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- Ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-</html>
-</br>
-</br>
-</br>
-<!-- </br>
-</br> -->
+    <main class="flex-grow-1">

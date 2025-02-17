@@ -7,7 +7,7 @@ session_start();
 include_once '../config/appconfig.php';
 
 //Exibir o header
-include_once  '../static/header.php';
+include_once  '../assets/header.php';
 
 // Aciona controlador
 
@@ -20,7 +20,7 @@ $controlClass = ucfirst($control) . 'Control';
 function loadControl($control, $controlClass)
 {
     
-    $file = __DIR__ ."/" . strtolower($control) . '/' .  $controlClass . '.php';
+    $file = __DIR__ ."/" . $control . '/' .  $controlClass . '.php';
 
     if (file_exists($file)) {
         include_once $file;
