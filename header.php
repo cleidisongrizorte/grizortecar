@@ -1,107 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <!-- 
-    - primeira meta tags
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
   -->
-    <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-    <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados." />
-    <meta
-      name="description"
-      content="Oficina Mecânica de veículos nacionais e importados."
-    />
+  <title>GrizorteCar - Sua oficina</title>
+  <meta name="title" content="GrizorteCar - Sua oficina">
+  <meta name="description" content="site da oficina GrizorteCar">
 
-    
-    <!-- - favicon -->
-  
-    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
 
-    
-    <!-- - link google font -->
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-      rel="stylesheet"
-    />
-
-    
-    <!-- - material icon font -->
-  
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
-    />
-
-    <!-- 
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- 
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
-  </head>
-<body>
-        <header class="header" id="header">
-      <div class="container">
-        <a href="index.php" class="logo">
-          <img
-            src="./assets/images/logo.png"
-            width="128"
-            height="63"
-            alt="autofix home"
-          />
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class=" preload-box" data-preloader>
+    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
+
+    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="GrizorteCar">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Agendamento</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Sobre Nós</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+
+        <a href="tel:+12312345678901" class="contact-number">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">(62) 9999-8001</span>
         </a>
 
-        <nav class="navbar" data-navbar>
-          <ul class="navbar-list">
-            <li>
-              <a href="index.php" class="navbar-link">Home</a>
-            </li>
+        <a href="#" class="btn btn-primary">
+          <span class="span">Entrar</span>
 
-            <li>
-              <a href="#servico" class="navbar-link">Serviços</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Agendamento</a>
-            </li>
-
-            <li>
-              <a href="#sobre" class="navbar-link">Sobre Nós</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Contato</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="login.php" class="btn btn-primary">
-          <span class="span">Entrar Conta</span>
-
-          <span class="material-symbols-rounded">arrow_forward</span>
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
 
-        <button
-          class="nav-toggle-btn"
-          aria-label="toggle menu"
-          data-nav-toggler
-        >
-          <span class="nav-toggle-icon icon-1"></span>
-          <span class="nav-toggle-icon icon-2"></span>
-          <span class="nav-toggle-icon icon-3"></span>
-        </button>
       </div>
-    </header>
 
-</body>
-</html>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+

@@ -2,18 +2,43 @@
 
 class ClienteView
 {
+    // Exibe o formulário de cadastro de cliente
     public function exibirFormularioCadastro()
     {
-        // HTML para o formulário de cadastro de cliente
-        echo '
+        echo $this->getHeader();
+        echo $this->getFormularioCadastro();
+        echo $this->getFooter();
+    }
+
+    // Exibe a lista de clientes cadastrados
+    public function listarClientes()
+    {
+        echo "<div class='container py-5'>";
+        echo "<h3>Lista de Clientes</h3>";
+        echo "<p>Aqui será exibida a lista de clientes cadastrados.</p>";
+        echo "</div>";
+    }
+
+    // Cabeçalho da página
+    private function getHeader()
+    {
+        return '
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="static/css/style.css">    
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
+<body>
+        ';
+    }
+
+    // Formulário de cadastro
+    private function getFormularioCadastro()
+    {
+        return '
 <div class="cadastro-body">
     <main id="form_container">
         <!-- Seção de Cabeçalho -->
@@ -54,7 +79,7 @@ class ClienteView
                     </div>
                 </div>
 
-            <!-- Campo de telefone -->
+                <!-- Campo de Telefone -->
                 <div class="input-box">
                     <label for="telefone" class="form-label">Telefone</label>
                     <div class="input-field">
@@ -85,12 +110,12 @@ class ClienteView
                 <div class="radio-container">
                     <label class="form-label">Gênero</label>
                     <div id="gender_inputs">
-                        <div class="radio-box">                            
-                            <input type="radio" name="genero" id="female" class="form-control" value="feminino" required>
-                            <label for="female" class="form-label">Feminino</label>                            
-                        </div>                        
                         <div class="radio-box">
-                            <input type="radio" name="genero" id="male" class="form-control" value="masculino" >
+                            <input type="radio" name="genero" id="female" class="form-control" value="feminino" required>
+                            <label for="female" class="form-label">Feminino</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="genero" id="male" class="form-control" value="masculino">
                             <label for="male" class="form-label">Masculino</label>
                         </div>
                         <div class="radio-box">
@@ -107,22 +132,17 @@ class ClienteView
             </button>
         </form>
     </main>
-    <script src="static/js/script.js"></script>    
 </div>
+        ';
+    }
 
+    // Rodapé da página
+    private function getFooter()
+    {
+        return '
+    <script src="static/js/script.js"></script>
+</body>
 </html>
         ';
-
-
-     
-        
-    }
-   function listarClientes()
-    {
-
-        echo "<div class='container py-5'>";
-        echo "<h3>Lista de Clientes</h3>";
-        echo "<p>Aqui será exibida a lista de clientes cadastrados.</p>";
-        echo "</div>";
     }
 }

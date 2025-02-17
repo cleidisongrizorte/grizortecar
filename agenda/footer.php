@@ -22,13 +22,13 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   
 
   <!-- 
     - custom font link
   -->
-  <link rel="stylesheet" href="./static/font/font.css">
+  <link rel="stylesheet" href="./assets/font/font.css">
 
 </head>
 
@@ -51,8 +51,6 @@
     <article>
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
-        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
       </button>
 
       <!-- contato header -->
@@ -267,7 +265,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./static/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
   <!-- 
     - ionicon link
@@ -276,5 +274,3 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>
-
-

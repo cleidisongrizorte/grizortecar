@@ -25,6 +25,9 @@ class IndexView
 
         // HTML para a página inicial
         echo "
+        </br>
+        </br>
+        </br>
             <div class='container mt-5'>
                 <div class='row justify-content-center'>
                     <div class='col-md-6 text-center'>
@@ -62,6 +65,7 @@ class IndexView
                 </div>
             </div>
         </div>
+        </br>
         ";
     }
 }

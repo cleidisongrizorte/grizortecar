@@ -1,123 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
-    - primeira meta tags
-  -->
-    <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-    <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados." />
-    <meta
-      name="description"
-      content="Oficina Mecânica de veículos nacionais e importados."
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <!-- - favicon -->
-  
-    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+  <!-- Primary meta tags -->
+  <title>GrizorteCar - Sua oficina</title>
+  <meta name="title" content="GrizorteCar - Sua oficina">
+  <meta name="description" content="Site da oficina GrizorteCar">
 
-    
-    <!-- - link google font -->
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-    
-    <!-- - material icon font -->
-  
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
-    />
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./static/css/style.css" />
+  <!-- Custom font link -->
+  <link rel="stylesheet" href="./assets/font/font.css">
 
-    <!-- 
-    - preload images
-  -->
-    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" /> -->
-  </head>
-<body>
-  <header class="header" id="header">
-      <div class="container">
-        <a href="index.php" class="logo">
-          <img
-            src="./static/images/logo.png"
-            width="128"
-            height="63"
-            alt="autofix home"
-          />
+  <!-- Preload images -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- Preloader -->
+  <!-- <div class="preload-box" data-preloader>
+    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
+    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
+  </div> -->
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./static/images/logo.png" width="160" height="50" alt="logo GrizorteCar">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Serviços</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Agendamento</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Sobre Nós</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <a href="tel:+12312345678901" class="contact-number">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          <span>(62) 9999-8001</span>
         </a>
 
-        <nav class="navbar" data-navbar>
-          <ul class="navbar-list">
-            <li>
-              <a href="index.php" class="navbar-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Serviços</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Agendamento</a>
-            </li>
-
-            <li>
-              <a href="index.php#sobre" class="navbar-link">Sobre Nós</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Contato</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="../login.php" class="btn btn-primary">
-          <span class="span">Entrar Conta</span>
-
-          <span class="material-symbols-rounded">arrow_forward</span>
+        <a href="#" class="btn btn-primary">
+          <span>Entrar</span>
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
-
-        <button
-          class="nav-toggle-btn"
-          aria-label="toggle menu"
-          data-nav-toggler
-        >
-          <span class="nav-toggle-icon icon-1"></span>
-          <span class="nav-toggle-icon icon-2"></span>
-          <span class="nav-toggle-icon icon-3"></span>
-        </button>
       </div>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
   </header>
 
-    <!-- Banner da header -->
-    
-       <section
-          class="bannerheader has-bg-image"
-          aria-label="home"
-          style="background-image: url('./static/images/bannerheader.jpg')">
-          <div class="container">
-            <!-- <div class="hero-content">
-              <p class="section-subtitle :dark">
-                GrizorteCar
-              </p> -->
-            </div>
-          </div>
-        </section>
+  <!-- Ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-<script src="./static/js/script.js"></script>
 </html>
+</br>
+</br>
+</br>
+<!-- </br>
+</br> -->
