@@ -20,7 +20,7 @@
     <!-- Javascript -->
     <script src="<?= BASE_URL ?>/agenda/static/js/scripts.js"></script>
 
-    <title>AgendaAqui - Agendamento de Serviços</title>
+    <title>GrizorteCar - Agendamento de Serviços</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
