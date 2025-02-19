@@ -23,8 +23,7 @@ class ServicoControl
                     //$logo = $_FILES['logo'] ?? null;
                     $preco = $params['preco'];
                     $duracao = $params['duracao'];
-                    //$empresaId = $params['empresa_id'];
-                    $empresaId = $params['empresa_id'] ?? null;
+
 
                     // Diretório de upload da logo
                     // (__DIR__ pega url absoluta do local do arquivo e 2 para subir 2 níveis e chegar em /agenda )
@@ -51,7 +50,7 @@ class ServicoControl
                         $logo = null;
                     }
 
-                    $servico = new Servico(null, $nome, $descricao, $preco, $duracao, $logo, $empresaId);
+                    $servico = new Servico(null, $nome, $descricao, $preco, $duracao, $logo);
 
                     if ($servico->cadastrar()) {
                         $_SESSION['message'] = [
@@ -77,7 +76,7 @@ class ServicoControl
                     $logoAtual = $params['logo_atual'];
                     $preco = $params['preco'];
                     $duracao = $params['duracao'];
-                    // $empresaId = $params['empresa_id'];
+                    
 
                     // Diretório de upload da logo
                     // (__DIR__ pega url absoluta do local do arquivo e 2 para subir 2 níveis e chegar em /agenda )
@@ -149,9 +148,9 @@ class ServicoControl
                     if (isset($params['id'])) {
                         $servico = $this->obterPorId($params['id']);
                         if ($servico) {
-                            $empresas = $this->obterEmpresas();
+                            // $empresas = $this->obterEmpresas();
                             $view = new ServicoView();
-                            $view->exibirFormularioEdicao($servico, $empresas);
+                            $view->exibirFormularioEdicao($servico);
                         } else {
                             echo "Serviço não encontrado.";
                         }

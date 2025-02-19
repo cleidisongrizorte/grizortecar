@@ -101,7 +101,7 @@ class ServicoView
         echo "</tbody></table></div>";
     }
 
-    public function exibirFormularioEdicao($servico, $empresas)
+    public function exibirFormularioEdicao($servico)
     {
         echo "
         <div class='container mt-5'>

@@ -99,6 +99,21 @@ class Cliente {
         $db = new Database();
         $conn = $db->connect();
 
+        // Verificar se o e-mail já está cadastrado
+        $stmt = $conn->prepare("SELECT id FROM cliente WHERE email = ?");
+        $stmt->bind_param("s", $this->email);
+        $stmt->execute();
+        $stmt->store_result();
+
+        if ($stmt->num_rows > 0) {
+            // E-mail já cadastrado
+            $stmt->close();
+            $db->closeConnection();
+            return "email_existente";
+        }
+
+        $stmt->close();
+
         // Preparar e executar a query de inserção
         $stmt = $conn->prepare("INSERT INTO cliente(nome, sobrenome, data_nascimento, genero, telefone, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssssss", $this->nome, $this->sobrenome, $this->data_nascimento, $this->genero, $this->telefone, $this->email, $this->senha);
@@ -159,7 +174,7 @@ class Cliente {
             if (password_verify($senha, $user['senha'])) {
                 // Autenticação bem-sucedida
                 $conn->close();
-                return new Cliente($user['id_cliente'], $user['nome'], $user['sobrenome'], $user['data_nascimento'], $user['genero'], $user['telefone'], $user['email'], $user['senha']);
+                return new Cliente($user['id'], $user['nome'], $user['sobrenome'], $user['data_nascimento'], $user['genero'], $user['telefone'], $user['email'], $user['senha']);
             }
         }
 

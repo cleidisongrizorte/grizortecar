@@ -10,9 +10,9 @@ class Servico
     private $preco;
     private $duracao;
     private $logo;
-    private $empresa_id;
+    
 
-    public function __construct($id, $nome, $descricao, $preco, $duracao, $logo, $empresa_id = null)
+    public function __construct($id, $nome, $descricao, $preco, $duracao, $logo)
     {
         $this->id = $id;
         $this->nome = $nome;
@@ -20,7 +20,7 @@ class Servico
         $this->preco = $preco;
         $this->duracao = $duracao;
         $this->logo = $logo;
-        $this->empresa_id = $empresa_id;
+        
     }
 
     // Getters e Setters
@@ -85,15 +85,7 @@ class Servico
         $this->logo = $logo;
     }
 
-    public function getEmpresaId()
-    {
-        return $this->empresa_id;
-    }
 
-    public function setEmpresaId($empresa_id)
-    {
-        $this->empresa_id = $empresa_id;
-    }
 
     // Métodos para cadastro
     public function cadastrar()
@@ -101,8 +93,8 @@ class Servico
         $db = new Database();
         $conn = $db->connect();
 
-        $stmt = $conn->prepare("INSERT INTO servico (nome, descricao, preco, duracao, logo, empresa_id) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssdisi", $this->nome, $this->descricao, $this->preco, $this->duracao, $this->logo, $this->empresa_id);
+        $stmt = $conn->prepare("INSERT INTO servico (nome, descricao, preco, duracao, logo) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssdisi", $this->nome, $this->descricao, $this->preco, $this->duracao, $this->logo);
 
         if ($stmt->execute()) {
             $stmt->close();
@@ -121,8 +113,8 @@ class Servico
         $db = new Database();
         $conn = $db->connect();
 
-        $stmt = $conn->prepare("UPDATE servico SET nome = ?, descricao = ?, preco = ?, duracao = ?, logo = ?, empresa_id = ? WHERE id = ?");
-        $stmt->bind_param("ssdisii", $this->nome, $this->descricao, $this->preco, $this->duracao, $this->logo, $this->empresa_id, $this->id);
+        $stmt = $conn->prepare("UPDATE servico SET nome = ?, descricao = ?, preco = ?, duracao = ?, logo = ?");
+        $stmt->bind_param("sdisi", $this->nome, $this->descricao, $this->preco, $this->duracao, $this->logo);
 
         if ($stmt->execute()) {
             $stmt->close();
@@ -173,8 +165,8 @@ class Servico
                 $row['descricao'],
                 $row['preco'],
                 $row['duracao'],
-                $row['logo'],
-                $row['empresa_id']
+                $row['logo']
+                
             );
         }
 
@@ -201,8 +193,7 @@ class Servico
                 $row['descricao'],
                 $row['preco'],
                 $row['duracao'],
-                $row['logo'],
-                $row['empresa_id']
+                $row['logo']
             );
         }
 
@@ -231,8 +222,7 @@ class Servico
                 $row['descricao'],
                 $row['preco'],
                 $row['duracao'],
-                $row['logo'],
-                $row['empresa_id']
+                $row['logo']
             );
         }
 

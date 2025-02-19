@@ -231,7 +231,7 @@ body {
   font-size: var(--fs-7);
 }
 
-.btn {
+.btn2 {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -246,27 +246,27 @@ body {
   transition: var(--transition-1);
 }
 
-.btn:is(:hover, :focus-visible) {
+.btn2:is(:hover, :focus-visible) {
   border-radius: 0;
   border-top-right-radius: var(--radius-20);
 }
 
-.btn-primary {
+.btn-primary2 {
   background-color: var(--rich-black-fogra-29);
   color: var(--white);
 }
 
-.btn-primary:is(:hover, :focus-visible) {
+.btn-primary2:is(:hover, :focus-visible) {
   background-color: var(--yellow-green);
   color: var(--white);
 }
 
-.btn-secondary {
+.btn-secondary2 {
   color: var(--smoky-black);
   box-shadow: inset 0 0 0 2px var(--yellow-green);
 }
 
-.btn-secondary:is(:hover, :focus-visible) {
+.btn-secondary2:is(:hover, :focus-visible) {
   background-color: var(--yellow-green);
   color: var(--white);
 }

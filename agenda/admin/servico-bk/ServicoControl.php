@@ -28,7 +28,7 @@ class ServicoControl
 
                     // Diretório de upload da logo
                     // (__DIR__ pega url absoluta do local do arquivo e 2 para subir 2 níveis e chegar em /agenda )
-                    $uploadDir = dirname(__DIR__, 2) . '/static/img/servicos/';
+                    $uploadDir = dirname(__DIR__, 2) . '/assets/images/servicos/';
 
                     // Verifica se a pasta existe, se não, cria
                     if (!is_dir($uploadDir)) {
@@ -77,11 +77,11 @@ class ServicoControl
                     $logoAtual = $params['logo_atual'];
                     $preco = $params['preco'];
                     $duracao = $params['duracao'];
-                    // $empresaId = $params['empresa_id'];
+                    $empresaId = $params['empresa_id'];
 
                     // Diretório de upload da logo
                     // (__DIR__ pega url absoluta do local do arquivo e 2 para subir 2 níveis e chegar em /agenda )
-                    $uploadDir = dirname(__DIR__, 2) . '/static/img/servicos/';
+                    $uploadDir = dirname(__DIR__, 2) . '/assets/images/servicos/';
 
                     // Processa a imagem
                     if (!empty($_FILES['logo']['name'])) {
@@ -111,7 +111,7 @@ class ServicoControl
                         $logo = $logoAtual;
                     }
 
-                    $servico = new Servico($id, $nome, $descricao, $preco, $duracao, $logo);
+                    $servico = new Servico($id, $nome, $descricao, $preco, $duracao, $logo, $empresaId);
                     if ($servico->atualizar()) {
                         $_SESSION['message'] = [
                             'text' => 'Serviço atualizado com sucesso.',
@@ -168,7 +168,7 @@ class ServicoControl
                         if ($servico) {
                             if ($servico->deletar()) {
                                 //apagar arquivo da logo
-                                $logoCaminho = dirname(__DIR__, 2) . '/static/img/servicos/' . $servico->getLogo();
+                                $logoCaminho = dirname(__DIR__, 2) . '/assets/images/servicos/' . $servico->getLogo();
                                 // Verifica se o arquivo de imagem existe e exclui
                                 if (file_exists($logoCaminho)) {
                                     unlink($logoCaminho);  // Remove o arquivo

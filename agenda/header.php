@@ -16,24 +16,51 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+  <link rel="shortcut icon" href="<?= BASE_URL ?>/favicon.ico" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
+
+      <!-- Bootstrap CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS (incluindo popper e bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ìcones bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
   <!-- 
     - custom font link
   -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/font/font.css">
+
+
+    <!-- 
+    - preload images
+  -->
+  <!-- <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/loading.svg">
+  <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/loading-circle.svg">
+  <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-banner.png"> -->
 
 
 
 </head>
 
 <body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <!-- <div class=" preload-box" data-preloader>
+    <img src="<?= BASE_URL ?>/assets/images/loading.svg" width="45" height="45" alt="loading">
+
+    <img src="<?= BASE_URL ?>/assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
+  </div> -->
 
 
   <!-- 
@@ -43,8 +70,8 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="160" height="50" alt="GrizorteCar">
+      <a href="<?= BASE_URL ?>/agenda/index.php" class="logo">
+        <img src="<?= BASE_URL ?>/assets/images/logo.png" width="160" height="50" alt="GrizorteCar">
       </a>
 
       <nav class="navbar" data-navbar>

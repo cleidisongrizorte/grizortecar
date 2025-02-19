@@ -17,18 +17,18 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+  <link rel="shortcut icon" href="<?= BASE_URL ?>/agenda/favicon.ico" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/css/style.css">
   
 
   <!-- 
     - custom font link
   -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/font/font.css">
 
 </head>
 
@@ -205,7 +205,7 @@
           <p class="copyright">&copy; <?php echo date('Y'); ?> Cleidison Grizote</p>
         </div>
 
-        <img src="./assets/images/logo_branco.png" width="100" height="63" loading="lazy" alt="grizortecar">
+        <img src="<?= BASE_URL ?>/agenda/assets/images/logo_branco.png" width="100" height="63" loading="lazy" alt="grizortecar">
 
         <ul class="social-list">
 
@@ -250,7 +250,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="<?= BASE_URL ?>/agenda/assets/js/script.js"></script>
 
   <!-- 
     - ionicon link
