@@ -1,670 +1,376 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-<title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-  <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
-  <meta name="description" content="site da oficina GrizorteCar">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - custom font link
-  -->
-  <link rel="stylesheet" href="./assets/font/font.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/loading.svg">
-  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-
-</head>
-
-<body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <!-- <div class=" preload-box" data-preloader>
-    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
-
-    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
-  </div> -->
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <!-- <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="160" height="50" alt="volti home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Services</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Gallery</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Contact Us</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <div class="header-action">
-
-        <a href="tel:+12312345678901" class="contact-number">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">+(123) 1234-567-8901</span>
-        </a>
-
-        <a href="#" class="btn btn-primary">
-          <span class="span">Get a quote</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
-
-      </div>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
-        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
-      </button>
-
-    </div>
-  </header> -->
 
 <!-- Exibir o header -->
 <?php include_once 'header.php'; ?>
 
 
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="home">
-        <div class="container">
-
-          <div class="hero-content" data-reveal="left">
-
-            <h1 class="h1 hero-title">
-              GrizorteCar <span class="span">Sua Oficina </span> Mecânica.
-            </h1>
-
-            <ul class="hero-list">
-
-              <li>
-                <div class="hero-card">
-                  <ion-icon name="compass-outline" aria-hidden="true"></ion-icon>
-
-                  <p class="card-subtitle">400M²</p>
-
-                  <p class="card-title">Espaço</p>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" style="margin-bottom: 90px;">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">GrizorteCar</h4>
+                            <h1 class="display-1 text-white mb-md-4">A sua Oficina Mecânica.</h1>
+                            <a href="./agenda/" class="btn btn-primary py-md-3 px-md-5 mt-2">Agenda Agora</a>
+                        </div>
+                    </div>
                 </div>
-              </li>
-
-              <li>
-                <div class="hero-card">
-                  <ion-icon name="calendar-number-outline" aria-hidden="true"></ion-icon>
-
-                  <p class="card-subtitle">+10</p>
-
-                  <p class="card-title">Anos</p>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">GrizorteCar</h4>
+                            <h1 class="display-1 text-white mb-md-4">Serviço ágil, profissional e de confiança.</h1>
+                            <a href="./agenda/" class="btn btn-primary py-md-3 px-md-5 mt-2">Agenda sua Visita</a>
+                        </div>
+                    </div>
                 </div>
-              </li>
-
-              <li>
-                <div class="hero-card">
-                  <ion-icon name="ribbon-outline" aria-hidden="true"></ion-icon>
-
-                  <p class="card-subtitle">+10</p>
-
-                  <p class="card-title">Prêmios</p>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
                 </div>
-              </li>
-
-            </ul>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Agenda Sua Visita</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </a>
-
-          </div>
-
-          <figure class="hero-banner" data-reveal="right">
-            <img src="./assets/images/hero-banner.png" width="1116" height="766" alt="Bike" class="w-100">
-          </figure>
-
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
         </div>
-      </section>
+    </div>
+    <!-- Carousel End -->
 
 
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" aria-labelledby="about-label">
-        <div class="container">
-
-          <figure class="about-banner" data-reveal="left">
-            <img src="./assets/images/about-banner-1.jpg" width="380" height="382" loading="lazy" alt="about banner"
-              class="w-100 img-1">
-
-            <img src="./assets/images/about-banner-2.jpg" width="347" height="349" loading="lazy" alt="about banner"
-              class="w-100 img-2">
-          </figure>
-
-          <div class="about-content" data-reveal="right">
-
-            <p class="section-subtitle has-before" id="about-label">Sobre Nós</p>
-
-            <h2 class="h2 section-title">
-              ESTAMOS COMPROMETIDOS COM A QUALIDADE
-            </h2>
-
-            <p class="section-text">
-              Referência em serviços automotivos em Goiânia desde 2012, com conceito inovador
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <!-- <h1 class="display-1 text-primary text-center">01</h1> -->
+            <h1 class="display-4 text-uppercase text-center mb-5">Bem Vindo a <span class="text-primary">GrizorteCar</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="img/about.png" alt="">
+                    <p>
+                  Referência em serviços automotivos em Goiânia desde 2012, com conceito inovador
              que oferece diversas vantagens para seus clientes: o melhor atendimento, 
              conforto, conveniência, os melhores equipamentos e a qualidade de serviços
               executados por profissionais treinados.
-            </p>
-
-            <div class="about-wrapper">
-
-              <div class="about-card">
-
-                <div class="title-wrapper">
-                  <ion-icon name="construct-outline"></ion-icon>
-
-                  <h3 class="card-title">Equipe técnica especializada</h3>
+                    </p>
                 </div>
-
-                <p class="card-text">
-                  Nossos mecânicos são treinados com os mais elevados padrões técnicos exigidos por cada montadora.
-                </p>
-
-              </div>
-
-              <div class="about-card">
-
-                <div class="title-wrapper">
-                  <ion-icon name="laptop-outline"></ion-icon>
-
-                  <h3 class="card-title">Tecnologia de ponta</h3>
-                </div>
-
-                <p class="card-text">
-                  Somos especialistas na manutenção de veículos e estamos preparados para lidar com com a tecnologia automotiva de última geração.
-                </p>
-
-              </div>
-
             </div>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                <span class="span">Aqui você encontra todos os serviços em um só lugar!</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                <span class="span">Melhor Oficina Mecânica de Goiânia.</span>
-              </li>
-
-            </ul>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Agenda Sua visita</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #STATS
-      -->
-
-      <section class="section stats" aria-label="statistics">
-        <div class="container">
-
-          <ul class="stats-list" data-reveal>
-
-            <li class="stats-card">
-              <h3 class="h3 card-title">8K+</h3>
-
-              <p class="card-text">
-                Clientes Felizes
-              </p>
-            </li>
-
-            <li class="stats-card">
-              <h3 class="h3 card-title">22+</h3>
-
-              <p class="card-text">
-                Equipamentos
-              </p>
-            </li>
-
-            <li class="stats-card">
-              <h3 class="h3 card-title">99%</h3>
-
-              <p class="card-text">
-                Projetos completo
-              </p>
-            </li>
-
-          </ul>
-
-          <div class="stats-banner" data-reveal>
-            <img src="./assets/images/stats-banner.jpg" width="1398" height="565" loading="lazy" alt="video banner"
-              class="img-cover">
-
-            <button class="play-btn" aria-label="play video">
-              <ion-icon name="play" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" aria-labelledby="service-label">
-        <div class="container">
-
-          <p class="section-subtitle has-before" id="service-label" data-reveal>NOSSOS SERVIÇOS</p>
-
-          <h2 class="h2 section-title" data-reveal>
-            Conheca um pouco dos nosso serviços
-          </h2>
-
-          <div class="wrapper">
-
-            <ul class="service-list" data-reveal="left">
-
-              <li class="service-item">
-                <div>
-                  <h3 class="h5 card-title">Suspensão e Freio</h3>
-
-                  <p class="card-text">
-                    Se existe um grupo de peças de extrema importância no sistema automotivo,
-                  </p>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Suporte ao Seu Carro</h4>
+                    </div>
                 </div>
-
-                <div class="card-icon">
-                  <ion-icon name="car-outline" aria-hidden="true"></ion-icon>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Temos Carro Reserva</h4>
+                    </div>
                 </div>
-              </li>
-
-              <li class="service-item">
-                <div>
-                  <h3 class="h5 card-title">Mecânica Geral</h3>
-
-                  <p class="card-text">
-                   É a estrutura geral do veículo, pela qual são desmembradas...
-                  </p>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Estamos em ótima Localização</h4>
+                    </div>
                 </div>
-
-                <div class="card-icon">
-                  <ion-icon name="construct-outline"></ion-icon>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div>
-                  <h3 class="h5 card-title">Revisão Geral</h3>
-
-                  <p class="card-text">
-                    Todo veículo deve ser inspecionado regularmente. A revisão geral tem como finalidade
-                  </p>
-                </div>
-
-                <div class="card-icon">
-                  <ion-icon name="car-sport-outline"></ion-icon>
-                </div>
-              </li>
-
-            </ul>
-
-            <figure class="service-banner img-holder" style="--width: 805; --height: 510;">
-              <img src="./assets/images/service-banner.png" width="805" height="510" loading="lazy" alt="service banner"
-                class="img-cover">
-            </figure>
-
-            <ul class="service-list" data-reveal="right">
-
-              <li class="service-item">
-                <div class="card-icon">
-                  <ion-icon name="car-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h5 card-title">Regulagem Eletrônica</h3>
-
-                  <p class="card-text">
-                    A função da injeção eletrônica é fazer a mistura de ar e combustível na dosagem
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="card-icon">
-                  <ion-icon name="construct-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h5 card-title">Alinhamento de Direção</h3>
-
-                  <p class="card-text">
-                    O Alinhamento de Direção do seu veículo com sistema computadorizado de alta precisão
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="card-icon">
-                  <ion-icon name="car-sport-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h5 card-title">Serviços Hidráulico</h3>
-
-                  <p class="card-text">
-                    A direção hidráulica é o sistema que utiliza da mecânica dos fluidos
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta">
-        <div class="container">
-
-          <div class="cta-card" data-reveal="left">
-
-            <div>
-              <h2 class="h1 card-title">Oficina Mecânica em Goiânia</h2>
-
-              <p class="card-text">
-                <ul>
-                 <li>Ampla Infraestrutura</li>
-                <li>Equipe técnica profissional</li>
-                <li>Máquinas e equipamentos atualizados</li>
-                <li>Fácil localização</li>
-                </ul>
-
-               
-              </p>
             </div>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Contato</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-          <figure class="cta-banner" data-reveal="right">
-            <img src="./assets/images/cta-banner.jpg" width="330" height="206" loading="lazy" alt="cta banner"
-              class="img-cover">
-          </figure>
-
         </div>
-      </section>
+    </div>
+    <!-- About End -->
+    
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" aria-labelledby="blog-label">
-        <div class="container">
-
-          <div class="title-wrapper" data-reveal>
-
-            <div>
-              <p class="section-subtitle has-before" id="blog-label">Artigos e Novidades</p>
-
-              <h2 class="h2 section-title">Veja Algunhas Dicas</h2>
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <!-- <h1 class="display-1 text-primary text-center">02</h1> -->
+            <h1 class="display-4 text-uppercase text-center mb-5">Nossos Serviços</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Revisão Geral</h4>
+                        <p class="m-0">Todo veículo deve ser inspecionado regularmente. A revisão geral tem como finalidade</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-truck-monster text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Balanceamento de Rodas</h4>
+                        <p class="m-0">Comumente confundido com o alinhamento, este serviço visa deixar as rodas do seu veículo em perfeito equilíbrio.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-car text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Suspensão e Direção</h4>
+                        <p class="m-0">Manter a suspensão e direção do seu carro sempre em ordem é uma das especialidades da nossa oficina. Realizamos completa checagem dos diversos itens e componentes</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-cogs text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Mecânica Geral</h4>
+                        <p class="m-0">É a estrutura geral do veículo, pela qual são desmembradas...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Pintura</h4>
+                        <p class="m-0">A pintura é uma parte importante da estética do carro, mas com o passar do tempo é normal que ela apresente sinais de desgaste.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Troca de Óleo</h4>
+                        <p class="m-0">Este serviço deve ser feito em média a cada 10.000 km de acordo com o fabricante, tipo de óleo e uso do veículo.</p>
+                    </div>
+                </div>
             </div>
-
-            <a href="#" class="btn btn-secondary">
-              <span class="span">Ver Mais Blog</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-          <ul class="blog-list" data-reveal>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 770; --height: 550;">
-                  <img src="./assets/images/blog-1.jpg" width="770" height="550" loading="lazy"
-                    alt="Energy Star Certified Electric Vehicle Chargers" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="publish-date" datetime="2022-06-03">03 Jan 2025</time>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Admin</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubble-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">2 Comentários</span>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title">
-                      Carregadores de veículos elétricos
-                    </a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 770; --height: 550;">
-                  <img src="./assets/images/blog-2.jpg" width="770" height="550" loading="lazy"
-                    alt="Charging Solution For Electric Car & Hybrid Car" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="publish-date" datetime="2025-01-04">04 Jan 2025</time>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Admin</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubble-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">3 Comentários</span>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title">
-                      Solução carregamento para carros
-                    </a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 770; --height: 550;">
-                  <img src="./assets/images/blog-3.jpg" width="770" height="550" loading="lazy"
-                    alt="Home Charging Station For A Electric Vehicless" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="publish-date" datetime="2024-12-03">03 Dez 2024</time>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Admin</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubble-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">2 Comentários</span>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title">
-                      Estação carregamento residencial para veículos elétricos
-                    </a>
-                  </h3>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
         </div>
-      </section>
-      <!-- Exibir o header -->
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="bg-banner py-5 px-4 text-center">
+                <div class="py-5">
+                    <h1 class="display-1 text-uppercase text-primary mb-4">20% OFF</h1>
+                    <h1 class="text-uppercase text-light mb-4">Com Cartão Fidelidade</h1>
+                    <p class="mb-4">Faça o seu cartão no ato do cadastro.</p>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="./agenda/">Agendar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row mx-0">
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.jpg" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">Oficina Mecânica</h3>
+                            <p class="mb-4"><li>Equipe técnica profissional</li>
+                            <li>Máquinas e equipamentos atualizados</li>                            
+                            <li>Fácil localização</li>
+                            </p>
+                            <a class="btn btn-primary py-2 px-4" href="./agenda/">Agendar Visita</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">Nossos Diferenciais</h3>
+                            <p class="mb-4"><li>Atendimento especializado em veículos nacionais e importados</li>
+                            <li>Transparência no orçamento (fotos e vídeos para melhor entendimento)</li>                            
+                           
+                            </p>
+                            <a class="btn btn-primary py-2 px-4" href="./agenda/">Fazer Orçamento</a>
+                        </div>
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">            
+            <h1 class="display-4 text-uppercase text-center mb-5">O que dizem nossos clientes</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Daniel MB</h4>
+                    <i class="mb-2">Cliente</i>
+                    <p class="m-0">Possuem um ótimo atendimento e serviço, bem completo e explicativo! Indico para quem quer comprar seu carro sem “surpresinhas” desagradáveis! Vale a pena o</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Beatriz Paula</h4>
+                    <i class="mb-2">Cliente</i>
+                    <p class="m-0">Ótimo lugar, me atendeu super bem.. e resolveu meu problema.. super indico</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Ademir</h4>
+                    <i class="mb-2">Cliente</i>
+                    <p class="m-0">Está oficina é uma das melhores que já vi, rápido, transparente, preço justo e um excelente atendimento.</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Raimunda</h4>
+                    <i class="mb-2">Cliente</i>
+                    <p class="m-0">Muito rapido o atendimento eo conserto no meu carro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">            
+            <h1 class="display-4 text-uppercase text-center mb-5">Entre em Contato</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Nome" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Objetivo da mensagem" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Mensagem" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Nosso Endereço</h5>
+                                <p>Rua 75, 46, Central - Goiânia, Goiás</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-headset text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">62 3999-9999</h5>
+                                <p>Fale Conosco</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Nosso Email</h5>
+                                <p>contato@grizortecar.com.br</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="img/vendor-1.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-2.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-3.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-4.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-5.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-6.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-7.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+    <!-- Exibir o footer -->
 <?php include_once 'footer.php'; ?>
 
 
-    </article>
-</main>
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
-
-
+    
