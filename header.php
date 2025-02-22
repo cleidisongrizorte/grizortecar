@@ -18,14 +18,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
 
         <!-- - favicon -->  
   <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
@@ -71,7 +71,14 @@
         <div class="position-relative px-lg-5" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="index.php" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">GrizorteCar</h1>
+                    <!-- <h1 class="text-uppercase text-primary mb-1">GrizorteCar</h1> -->
+                    <img
+            src="./static/img/logo.png"
+            width="128"
+            height="63"
+            alt="grizortecar"
+          />
+        </a>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>

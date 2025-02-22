@@ -1,150 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">    
+    <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
+    <meta name="description" content="site da oficina GrizorteCar">
 
-  <!-- 
-    - primary meta tags
-  -->
-<title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-  <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
-  <meta name="description" content="site da oficina GrizorteCar">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="<?= BASE_URL ?>/favicon.ico" type="image/svg+xml">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/css/style.css">
-  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-      <!-- Bootstrap CSS -->
-    <!-- <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'> -->
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap JS (incluindo popper e bundle) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- ìcones bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
 
-
-  <!-- 
-    - custom font link
-  -->
-  <link rel="stylesheet" href="<?= BASE_URL ?>/assets/font/font.css">
-
-
-<!--     
-    - preload images
-  -->
-  <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/loading.svg">
-  <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/loading-circle.svg">
-  <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-banner.png">
-
-
-
+        <!-- - favicon -->  
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
 </head>
 
-<body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class=" preload-box" data-preloader>
-    <img src="<?= BASE_URL ?>/assets/images/loading.svg" width="45" height="45" alt="loading">
-
-    <img src="<?= BASE_URL ?>/assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
-  </div>
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="<?= BASE_URL ?>/agenda/index.php" class="logo">
-        <img src="<?= BASE_URL ?>/assets/images/logo.png" width="160" height="50" alt="GrizorteCar">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Serviços</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Agendamento</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Sobre Nós</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Contato</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <div class="header-action">
-
-        <a href="tel:+12312345678901" class="contact-number">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">(62) 9999-8001</span>
-        </a>
-
-        <a href="#" class="btn2 btn-primary2">
-          <span class="span">Entrar</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
-
-      </div>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
-        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
-      </button>
-
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>62 9999-9999</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>contato@grizortecar.com.br</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
-  
-        <!-- 
-        - #HERO
-      -->
+    <!-- Topbar End -->
 
-      <section class="hero2" aria-label="home">
-        <div class="container">
-                
 
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.php" class="navbar-brand">
+                    <!-- <h1 class="text-uppercase text-primary mb-1">GrizorteCar</h1> -->
+                    <img
+            src="./static/img/logo.png"
+            width="128"
+            height="63"
+            alt="grizortecar"
+          />
+        </a>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.php" class="nav-item nav-link active">Home</a>
+                        <a href="servico.php" class="nav-item nav-link">Serviços</a>
+                        <a href="./agenda/" class="nav-item nav-link">Agendamento</a>
+                        <a href="sobrenos.php" class="nav-item nav-link">Sobre Nós</a>
+                        <a href="contato.php" class="nav-item nav-link">Contato</a>                       
+                                
+                    </div>
+                </div>
+            </nav>
         </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Search Start -->
+    <!-- <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Pickup Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Drop Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Select A Car</option>
+                    <option value="1">Car 1</option>
+                    <option value="2">Car 1</option>
+                    <option value="3">Car 1</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+            </div>
         </div>
-      </section>
-
-
-  
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
+    </div> -->
+    <!-- Search End -->
+</br>
+    
+</body>
+</html>

@@ -1,261 +1,90 @@
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>GrizorteCar - A sua Oficina Mecânica de veículos</title>
-  <meta name="title" content="GrizorteCar - A sua Oficina Mecânica de veículos nacionais e importados.">
-  <meta name="description" content="site da oficina GrizorteCar">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="<?= BASE_URL ?>/agenda/favicon.ico" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/css/style.css">
-  
-
-  <!-- 
-    - custom font link
-  -->
-  <link rel="stylesheet" href="<?= BASE_URL ?>/agenda/assets/font/font.css">
-
-</head>
-
-<body id="top">
-
-  <main>
-    <article>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-      </button>
-
-      <!-- contato header -->
-
-      <section class="contact" aria-label="contact" data-reveal="right">
-        <div class="container">
-          <ul class="contact-list">
-            <li>
-              <div class="contact-card">
-                <div class="card-icon">
-                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+<!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Nosso Contato</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Rua 75, 46, Central - Goiânia, Goiás </p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>62 9999-9999</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>contato@grizortecar.com.br</p>
+                <h6 class="text-uppercase text-white py-2">Siga-Nós</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div>
-                  <h3 class="h6">Telefone</h3>
-                  <a href="tel:+62999999" class="card-subtitle">62 9999-9999</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                                        <a class="text-body mb-2" href="./agenda/index.php?control=login"><i class="fa fa-angle-right text-white mr-2"></i>Entrar</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Política de privacidade</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Termo & Condiçõs</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Programa Afiliado</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Ajudas</a>
                 </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="contact-card">
-                <div class="card-icon">
-                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Galeria</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="static/img/gallery-6.jpg" alt=""></a>
+                    </div>
                 </div>
-                <div>
-                  <h3 class="h6">E-mail</h3>
-                  <a href="mailto:contato@grizortecar.com.br" class="card-subtitle">contato@grizortecar.com.br</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <p class="mb-4">Inscreva-se para receber novidades</p>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Seu Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Inscrever-se</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="contact-card">
-                <div class="card-icon">
-                  <ion-icon name="compass-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <div>
-                  <h3 class="h6">Nosso Endereço</h3>
-                  <address class="card-subtitle">Rua 3, Goiânia</address>
-                </div>
-              </div>
-            </li>
-          </ul>
+                <i>Inscreva-se para receber novidades</i>
+            </div>
         </div>
-      </section>
-    </article>
-  </main>
-
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-top section" data-reveal>
-
-        <div class="newsletter-card">
-
-          <div class="card-icon">
-            <ion-icon name="mail-unread-outline" aria-hidden="true"></ion-icon>
-          </div>
-
-          <h3 class="h3 card-title">Inscreva-se para receber novidades</h3>
-
-          <form action="#" class="newsletter-form">            
-
-            <input type="email" name="email" id="email" placeholder="Endereço de e-mail" required class="email-field">
-
-            <button type="submit" class="btn btn-primary">Inscrever-se</button>
-
-          </form>
-
-        </div>
-
-        <div class="footer-list">
-
-          <p class="h6 has-after">GrizorteCar</p>
-
-          <p class="footer-text">
-            A GrizorteCar, é uma oficina mecânica especializada na manutenção de veículos nacionais, importados e premium.
-          </p>
-
-          <a href="#" class="btn-outline">
-            <span class="span">Fazer Agendamento</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="h6 has-after">Saiba mais sobre nós</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Inicio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Quem Somos</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Nossos Serviços</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contato</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
-          </li>
-
-
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="h6 has-after">Contato Rápido</p>
-          </li>
-
-          <li>
-            <address class="footer-text">
-              Rua 75, 46, Central - Goiânia, Goiás 
-            </address>
-          </li> </br>
-
-          <li>
-            <p class="footer-text">
-              Se tiver alguma dúvida ou precisar de ajuda, entre em contato com nossa equipe.
-            </p>
-          </li>
-          
-
-          <li>
-            <a href="tel:62999999" class="contact-link">(62)9999-9999</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <div>
-          <ul class="footer-bottom-list">
-
-            <li>
-              <a href="#" class="footer-bottom-link">Onde nos encontrar</a>
-            </li>
-
-            <!-- <li>
-              <a href="#" class="footer-bottom-link">Termos de pagamento</a>
-            </li> -->
-
-            <li>
-              <a href="#" class="footer-bottom-link">Política de privacidade</a>
-            </li>
-
-          </ul>
-          
-          <p class="copyright">&copy; <?php echo date('Y'); ?> Cleidison Grizote</p>
-        </div>
-
-        <img src="<?= BASE_URL ?>/agenda/assets/images/logo_branco.png" width="100" height="63" loading="lazy" alt="grizortecar">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <?php echo date('Y'); ?> Cleidison Grizote</a></p>
 
     </div>
-  </footer>
+    <!-- Footer End -->
 
-  <!-- VOLTAR AO TOP -->
-  <a href="#top" class="back-top-btn" aria-label="go to top" data-go-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
 </body>
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="<?= BASE_URL ?>/agenda/assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>

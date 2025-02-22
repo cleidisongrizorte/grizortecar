@@ -10,7 +10,7 @@
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="static/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">GrizorteCar</h4>
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="static/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">GrizorteCar</h4>
@@ -52,7 +52,7 @@
             <h1 class="display-4 text-uppercase text-center mb-5">Bem Vindo a <span class="text-primary">GrizorteCar</span></h1>
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about.png" alt="">
+                    <img class="w-75 mb-4" src="static/img/about.png" alt="">
                     <p>
                   Referência em serviços automotivos em Goiânia desde 2012, com conceito inovador
              que oferece diversas vantagens para seus clientes: o melhor atendimento, 
@@ -174,6 +174,38 @@
         </div>
     </div>
     <!-- Services End -->
+         <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-1.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-2.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-3.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-4.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-5.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-6.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-7.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="static/img/vendor-8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
 
 
     <!-- Banner Start -->
@@ -184,7 +216,7 @@
                     <h1 class="display-1 text-uppercase text-primary mb-4">20% OFF</h1>
                     <h1 class="text-uppercase text-light mb-4">Com Cartão Fidelidade</h1>
                     <p class="mb-4">Faça o seu cartão no ato do cadastro.</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="./agenda/">Agendar Agora</a>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="agenda/index.php?control=cliente&action=novo">Fazer Cadastro</a>
                 </div>
             </div>
         </div>
@@ -198,7 +230,7 @@
             <div class="row mx-0">
                 <div class="col-lg-6 px-0">
                     <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.jpg" alt="">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="static/img/banner-left.jpg" alt="">
                         <div class="text-right">
                             <h3 class="text-uppercase text-light mb-3">Oficina Mecânica</h3>
                             <p class="mb-4"><li>Equipe técnica profissional</li>
@@ -219,7 +251,7 @@
                             </p>
                             <a class="btn btn-primary py-2 px-4" href="./agenda/">Fazer Orçamento</a>
                         </div>
-                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="static/img/banner-right.png" alt="">
                     </div>
                 </div>
             </div>
@@ -235,7 +267,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid ml-n4" src="static/img/testimonial-1.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Daniel MB</h4>
@@ -244,7 +276,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid ml-n4" src="static/img/testimonial-2.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Beatriz Paula</h4>
@@ -253,7 +285,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid ml-n4" src="static/img/testimonial-3.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Ademir</h4>
@@ -262,7 +294,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                        <img class="img-fluid ml-n4" src="static/img/testimonial-4.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Raimunda</h4>
@@ -336,38 +368,7 @@
     <!-- Contact End -->
 
 
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
+
 
     <!-- Exibir o footer -->
 <?php include_once 'footer.php'; ?>
