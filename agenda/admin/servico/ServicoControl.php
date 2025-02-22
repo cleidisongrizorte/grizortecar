@@ -77,7 +77,7 @@ class ServicoControl
                     $logoAtual = $params['logo_atual'];
                     $preco = $params['preco'];
                     $duracao = $params['duracao'];
-                    // $empresaId = $params['empresa_id'];
+                    $empresaId = $params['empresa_id'];
 
                     // Diretório de upload da logo
                     // (__DIR__ pega url absoluta do local do arquivo e 2 para subir 2 níveis e chegar em /agenda )
@@ -111,7 +111,7 @@ class ServicoControl
                         $logo = $logoAtual;
                     }
 
-                    $servico = new Servico($id, $nome, $descricao, $preco, $duracao, $logo);
+                    $servico = new Servico($id, $nome, $descricao, $preco, $duracao, $logo, $empresaId);
                     if ($servico->atualizar()) {
                         $_SESSION['message'] = [
                             'text' => 'Serviço atualizado com sucesso.',

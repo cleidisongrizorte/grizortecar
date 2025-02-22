@@ -2,105 +2,44 @@
 
 class ClienteView
 {
-    public function exibirFormularioCadastro()
+    function exibirFormularioCadastro()
     {
-        echo <<<HTML
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="static/css/style.css">    
-</head>
-
-<div class="cadastro-body">
-    <main id="form_container">
-        <div id="form_header">
-            <h1 id="form_title">Criar conta</h1>
-            <button class="btn-default">
-                <i class="fa-solid fa-right-to-bracket"></i>
-            </button>
-        </div>
-
-        <form action="?control=cliente&action=cadastrar" method="post" id="form">
-            <div id="input_container">
-
-                <div class="input-box">
-                    <label for="name" class="form-label">Primeiro nome</label>
-                    <div class="input-field">
-                        <input type="text" name="nome" id="name" class="form-control" placeholder="Fulano" required>
-                        <i class="fa-regular fa-user"></i>
+        // HTML para o formulário de cadastro do cliente
+        echo "
+        <div class='container d-flex justify-content-center align-items-center' style='min-height: 80vh;'>
+            <div class='card p-4 shadow-lg' style='max-width: 400px; width: 100%;'>
+                <h3 class='text-center'>Cadastre-se</h3>
+                <form action='?control=cliente&action=cadastrar' method='post' enctype='multipart/form-data' class='row g-3'>
+                    <div class='col-12'>
+                        <label for='nome' class='form-label'>Nome:</label>
+                        <input type='text' id='nome' name='nome' class='form-control' required>
                     </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="last_name" class="form-label">Último nome</label>
-                    <div class="input-field">
-                        <input type="text" name="sobrenome" id="last_name" class="form-control" placeholder="De Tal" required>
-                        <i class="fa-regular fa-user"></i>
+                    <div class='col-12'>
+                        <label for='telefone' class='form-label'>Telefone:</label>
+                        <input type='text' id='telefone' name='telefone' class='form-control'>
                     </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="birthdate" class="form-label">Nascimento</label>
-                    <div class="input-field">
-                        <input type="date" name="data_nascimento" id="birthdate" class="form-control" required>
+                    <div class='col-12'>
+                        <label for='email' class='form-label'>Endereço de Email:</label>
+                        <input type='email' id='email' name='email' class='form-control'>
                     </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="telefone" class="form-label">Telefone</label>
-                    <div class="input-field">
-                        <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Telefone" required>
-                        <i class="fa-solid fa-phone"></i>
+                    <div class='col-12'>
+                        <label for='senha' class='form-label'>Senha:</label>
+                        <input type='password' id='senha' name='senha' class='form-control'>
                     </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="email" class="form-label">E-mail</label>
-                    <div class="input-field">
-                        <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com" required>
-                        <i class="fa-regular fa-envelope"></i>
+                    <div class='col-12'>
+                        <button type='submit' class='btn btn-primary w-100'>Enviar</button>
                     </div>
-                </div>
 
-                <div class="input-box">
-                    <label for="password" class="form-label">Senha</label>
-                    <div class="input-field">
-                        <input type="password" name="senha" id="password" class="form-control" placeholder="*******" required>
-                        <i class="fa-solid fa-key"></i>
+                    <div class='mt-3 text-center'>
+                        <p>Já possui conta? <a href='?control=login'>Faça login</a></p>
                     </div>
-                </div>
-
-                <div class="radio-container">
-                    <label class="form-label">Gênero</label>
-                    <div id="gender_inputs">
-                        <div class="radio-box">                            
-                            <input type="radio" name="genero" id="female" class="form-control" value="feminino" required>
-                            <label for="female" class="form-label">Feminino</label>                            
-                        </div>                        
-                        <div class="radio-box">
-                            <input type="radio" name="genero" id="male" class="form-control" value="masculino">
-                            <label for="male" class="form-label">Masculino</label>
-                        </div>
-                        <div class="radio-box">
-                            <input type="radio" name="genero" id="other" class="form-control" value="outro">
-                            <label for="other" class="form-label">Outro</label>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
-
-            <button type="submit" class="btn-default">
-                <i class="fa-solid fa-check"></i> Criar conta
-            </button>
-        </form>
-    </main>
-     
-</div>
-HTML;
+        </div>
+        ";
     }
 
-    public function listarClientes()
+    function listarClientes()
     {
         echo "<div class='container py-5'>";
         echo "<h3>Lista de Clientes</h3>";
@@ -108,4 +47,3 @@ HTML;
         echo "</div>";
     }
 }
-?>

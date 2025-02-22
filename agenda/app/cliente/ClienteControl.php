@@ -17,14 +17,11 @@ class ClienteControl
             switch ($action) {
                 case 'cadastrar':
                     $nome = $params['nome'];
-                    $sobrenome = $params['sobrenome'];
-                    $data_nascimento = $params['data_nascimento'];
-                    $genero = $params['genero'];
                     $telefone = $params['telefone'];
                     $email = $params['email'];
                     $senha = $params['senha'];
 
-                    $cliente = new Cliente(null, $nome, $sobrenome, $data_nascimento, $genero, $telefone, $email, $senha);
+                    $cliente = new Cliente(null, $nome, $telefone, $email, $senha);
 
                     $resultado = $cliente->cadastrar();
 

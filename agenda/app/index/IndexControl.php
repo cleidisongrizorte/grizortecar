@@ -4,6 +4,7 @@ include_once __DIR__ . '/../database/Database.php';
 include_once __DIR__ . '/../agendamento/Agendamento.php';
 include_once __DIR__ . '/../../admin/servico/Servico.php';
 
+
 class IndexControl
 {
     // Método que trata a requisição do usuário
@@ -15,9 +16,10 @@ class IndexControl
         } else {
             // Lógica para ações GET
             switch ($action) {
-                // Utilizar outros actions futuramente (ex: modificar perfil, cancelar agendamento)
+                    // utilizar outros actions futuramente (modificar perfil, cancelar agendamento por exemplo)
+
                 default:
-                    // Caso o usuário esteja logado, obter agendamentos realizados
+                    //caso usuário logado, obter agendamentos realizados
                     if (isset($_SESSION['user_id'])) {
                         $idCliente = $_SESSION['user_id'];
                         $agendamentos = Agendamento::agendamentosPorCliente($idCliente);
@@ -32,7 +34,7 @@ class IndexControl
                         $view->exibirPaginaInicialConectado($agendamentos, $nomesServicos);
                         break;
                     } else {
-                        // Exibe a página inicial para o usuário não logado
+                        // Exibe a página inicial sem estar logado
                         $view = new IndexView();
                         $view->exibirPaginaInicial();
                         break;

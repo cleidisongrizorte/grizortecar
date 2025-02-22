@@ -15,7 +15,6 @@ class Agendamento
     private $funcionario_id;
 
     public function __construct($id, $data_hora_inicio, $data_hora_final, $tipo, $cliente_id, $servico_id, $funcionario_id, $status = 'agendado')
-    // public function __construct($id = null, $data_hora_inicio, $data_hora_final, $tipo, $cliente_id, $servico_id, $funcionario_id, $status = 'agendado')
     {
         $this->id = $id;
         $this->data_hora_inicio = $data_hora_inicio;
