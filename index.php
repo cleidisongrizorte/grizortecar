@@ -46,7 +46,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="sobre">
         <div class="container pt-5 pb-3">
             <!-- <h1 class="display-1 text-primary text-center">01</h1> -->
             <h1 class="display-4 text-uppercase text-center mb-5">Bem Vindo a <span class="text-primary">GrizorteCar</span></h1>
@@ -93,7 +93,7 @@
     
 
     <!-- Services Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="servico">
         <div class="container pt-5 pb-3">
             <!-- <h1 class="display-1 text-primary text-center">02</h1> -->
             <h1 class="display-4 text-uppercase text-center mb-5">Nossos Serviços</h1>
@@ -308,7 +308,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="contato">
         <div class="container pt-5 pb-3">            
             <h1 class="display-4 text-uppercase text-center mb-5">Entre em Contato</h1>
             <div class="row">

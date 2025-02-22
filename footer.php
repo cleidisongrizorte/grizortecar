@@ -17,11 +17,11 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                                        <a class="text-body mb-2" href="./agenda/index.php?control=login"><i class="fa fa-angle-right text-white mr-2"></i>Entrar</a>
+                    <a class="text-body mb-2" href="./agenda/index.php?control=login"><i class="fa fa-angle-right text-white mr-2"></i>Entrar</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Política de privacidade</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Termo & Condiçõs</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Programa Afiliado</a>
-                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Ajudas</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Ajuda</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <i>Inscreva-se para receber novidades</i>
+                <!-- <i>Inscreva-se para receber novidades</i> -->
             </div>
         </div>
     </div>
