@@ -142,8 +142,8 @@
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">04</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Mecânica Geral</h4>
-                        <p class="m-0">É a estrutura geral do veículo, pela qual são desmembradas...</p>
+                        <h4 class="text-uppercase mb-3">Higienização de Ar Condicionado</h4>
+                        <p class="m-0">O ar condicionado é quase que obrigatório aqui em Goiânia. Mas não deve se esquecer de fazer a Higienização de ar condicionado.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
