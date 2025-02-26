@@ -94,11 +94,8 @@ class IndexView
                     $temProximos = true;
                 }
 
-                $badgeClass = match ($status) {
-                    'cancelado' => 'badge bg-danger',
-                    'agendado' => 'badge bg-primary',
-                    default => 'badge bg-success'
-                };
+
+                $badgeClass = $status == 'cancelado' ? 'badge bg-danger' : ($status == 'agendado' ? 'badge bg-primary' : 'badge bg-success');
 
                 echo "<tr>
                         <td>{$data}</td>
